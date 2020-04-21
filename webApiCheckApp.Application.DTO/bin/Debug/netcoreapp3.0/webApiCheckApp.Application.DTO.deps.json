@@ -1,0 +1,36 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v3.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v3.0": {
+      "webApiCheckApp.Application.DTO/1.0.0": {
+        "dependencies": {
+          "WebApiCheckApp.Domain": "1.0.0"
+        },
+        "runtime": {
+          "webApiCheckApp.Application.DTO.dll": {}
+        }
+      },
+      "WebApiCheckApp.Domain/1.0.0": {
+        "runtime": {
+          "WebApiCheckApp.Domain.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "webApiCheckApp.Application.DTO/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "WebApiCheckApp.Domain/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}
