@@ -1,0 +1,13 @@
+C:\Users\Lucaum-PC\source\repos\WebApiCheckApp\WebApiCheckApp.Domain.Core\bin\Release\netcoreapp3.0\WebApiCheckApp.Domain.Core.deps.json
+C:\Users\Lucaum-PC\source\repos\WebApiCheckApp\WebApiCheckApp.Domain.Core\bin\Release\netcoreapp3.0\WebApiCheckApp.Domain.Core.dll
+C:\Users\Lucaum-PC\source\repos\WebApiCheckApp\WebApiCheckApp.Domain.Core\bin\Release\netcoreapp3.0\WebApiCheckApp.Domain.Core.pdb
+C:\Users\Lucaum-PC\source\repos\WebApiCheckApp\WebApiCheckApp.Domain.Core\bin\Release\netcoreapp3.0\webApiCheckApp.Application.DTO.dll
+C:\Users\Lucaum-PC\source\repos\WebApiCheckApp\WebApiCheckApp.Domain.Core\bin\Release\netcoreapp3.0\WebApiCheckApp.Domain.dll
+C:\Users\Lucaum-PC\source\repos\WebApiCheckApp\WebApiCheckApp.Domain.Core\bin\Release\netcoreapp3.0\webApiCheckApp.Application.DTO.pdb
+C:\Users\Lucaum-PC\source\repos\WebApiCheckApp\WebApiCheckApp.Domain.Core\bin\Release\netcoreapp3.0\WebApiCheckApp.Domain.pdb
+C:\Users\Lucaum-PC\source\repos\WebApiCheckApp\WebApiCheckApp.Domain.Core\obj\Release\netcoreapp3.0\WebApiCheckApp.Domain.Core.csprojAssemblyReference.cache
+C:\Users\Lucaum-PC\source\repos\WebApiCheckApp\WebApiCheckApp.Domain.Core\obj\Release\netcoreapp3.0\WebApiCheckApp.Domain.Core.AssemblyInfoInputs.cache
+C:\Users\Lucaum-PC\source\repos\WebApiCheckApp\WebApiCheckApp.Domain.Core\obj\Release\netcoreapp3.0\WebApiCheckApp.Domain.Core.AssemblyInfo.cs
+C:\Users\Lucaum-PC\source\repos\WebApiCheckApp\WebApiCheckApp.Domain.Core\obj\Release\netcoreapp3.0\WebApiCheckApp.Domain.Core.csproj.CopyComplete
+C:\Users\Lucaum-PC\source\repos\WebApiCheckApp\WebApiCheckApp.Domain.Core\obj\Release\netcoreapp3.0\WebApiCheckApp.Domain.Core.dll
+C:\Users\Lucaum-PC\source\repos\WebApiCheckApp\WebApiCheckApp.Domain.Core\obj\Release\netcoreapp3.0\WebApiCheckApp.Domain.Core.pdb

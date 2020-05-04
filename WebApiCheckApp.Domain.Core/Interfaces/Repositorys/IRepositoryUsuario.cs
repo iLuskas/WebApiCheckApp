@@ -7,5 +7,6 @@ namespace WebApiCheckApp.Domain.Core.Interfaces.Repositorys
 {
     public interface IRepositoryUsuario : IRepositoryBase<Usuario>
     {
+        Usuario GetUserByUsernameAndPass(Usuario usuario);
     }
 }

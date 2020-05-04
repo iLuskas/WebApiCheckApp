@@ -15,5 +15,10 @@ namespace WebApiCheckApp.Domain.Services.Services
         {
             _repositoryUsuario = repositoryUsuario;
         }
+
+        public Usuario GetUserByUsernameAndPass(Usuario usuario)
+        {
+            return _repositoryUsuario.GetUserByUsernameAndPass(usuario);
+        }
     }
 }

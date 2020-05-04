@@ -7,6 +7,6 @@ namespace WebApiCheckApp.Domain.Core.Interfaces.Repositorys
     public interface IRepositoryEmpresaCliente : IRepositoryBase<EmpresaCliente>
     {
         IEnumerable<EmpresaCliente> getAllInfoEmpresaCliente();
-         
+        EmpresaCliente getAllInfoEmpresaClienteById(int id);
     }
 }

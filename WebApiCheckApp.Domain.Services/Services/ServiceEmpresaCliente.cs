@@ -20,5 +20,10 @@ namespace WebApiCheckApp.Domain.Services.Services
         {
             return _repositoryEmpresaCliente.getAllInfoEmpresaCliente();
         }
+
+        public EmpresaCliente getAllInfoEmpresaClienteById(int id)
+        {
+            return _repositoryEmpresaCliente.getAllInfoEmpresaClienteById(id);
+        }
     }
 }

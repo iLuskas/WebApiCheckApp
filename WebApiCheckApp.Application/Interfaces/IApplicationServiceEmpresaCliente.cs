@@ -12,6 +12,7 @@ namespace WebApiCheckApp.Application.Interfaces
         EmpresaClienteDTO GetById(int id);
         IEnumerable<EmpresaClienteDTO> GetAll();
         IEnumerable<EmpresaClienteDTO> GetAllInfoEmpressaCliente();
+        EmpresaClienteDTO getAllInfoEmpresaClienteById(int id);
         void Update(EmpresaClienteDTO obj);
         void Remove(EmpresaClienteDTO obj);
         void Dispose();

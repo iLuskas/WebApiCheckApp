@@ -20,9 +20,9 @@ namespace WebApiCheckApp.Application.Services
             _mapper = mapper;
         }
 
-        public void Add(UsuarioDTO obj)
+        public void Add(UsuarioDTO usuarioDTO)
         {
-            var objEntity = _mapper.Map<Usuario>(obj);
+            var objEntity = _mapper.Map<Usuario>(usuarioDTO);
 
             _serviceUsuario.Add(objEntity);
         }
@@ -46,16 +46,24 @@ namespace WebApiCheckApp.Application.Services
             return _mapper.Map<UsuarioDTO>(objEntity);
         }
 
-        public void Remove(UsuarioDTO obj)
+        public UsuarioDTO GetUserByUserAndPass(UsuarioDTO usuarioDTO)
         {
-            var objEntity = _mapper.Map<Usuario>(obj);
+            var objEntity = _mapper.Map<Usuario>(usuarioDTO);
+
+            var obj = _serviceUsuario.GetUserByUsernameAndPass(objEntity);
+            return _mapper.Map<UsuarioDTO>(obj);
+        }
+
+        public void Remove(UsuarioDTO usuarioDTO)
+        {
+            var objEntity = _mapper.Map<Usuario>(usuarioDTO);
 
             _serviceUsuario.Remove(objEntity);
         }
 
-        public void Update(UsuarioDTO obj)
+        public void Update(UsuarioDTO usuarioDTO)
         {
-            var objEntity = _mapper.Map<Usuario>(obj);
+            var objEntity = _mapper.Map<Usuario>(usuarioDTO);
 
             _serviceUsuario.Update(objEntity);
         }

@@ -7,11 +7,12 @@ namespace WebApiCheckApp.Application.Interfaces
 {
     public interface IApplicationServiceUsuario
     {
-        void Add(UsuarioDTO obj);
+        void Add(UsuarioDTO usuarioDTO);
         UsuarioDTO GetById(int id);
         IEnumerable<UsuarioDTO> GetAll();
-        void Update(UsuarioDTO obj);
-        void Remove(UsuarioDTO obj);
+        UsuarioDTO GetUserByUserAndPass(UsuarioDTO usuarioDTO);
+        void Update(UsuarioDTO usuarioDTO);
+        void Remove(UsuarioDTO usuarioDTO);
         void Dispose();
     }
 }

@@ -71,6 +71,25 @@ namespace WebApiCheckApp.Controllers
             }
         }
 
+        // POST api/Login/values
+        [HttpPost("Login")]
+        public ActionResult Login([FromBody] UsuarioDTO usuarioDTO)
+        {
+            try
+            {
+                if (usuarioDTO == null)
+                    return NotFound(new { message = "Usuário inválido!" });
+
+                return Ok(_applicationServiceUsuario.GetUserByUserAndPass(usuarioDTO));
+
+            }
+            catch (Exception)
+            {
+
+                return StatusCode(StatusCodes.Status500InternalServerError, "Banco de dados Falhou - método Login");
+            }
+        }
+
         // PUT api/values/obj
         [HttpPut]
         public ActionResult Put([FromBody] UsuarioDTO usuarioDTO)

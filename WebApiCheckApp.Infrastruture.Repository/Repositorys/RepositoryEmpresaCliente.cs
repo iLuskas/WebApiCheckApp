@@ -25,5 +25,15 @@ namespace WebApiCheckApp.Infrastruture.Repository.Repositorys
 
             return query.AsNoTracking().OrderBy(e => e.Id).ToList();            
         }
+
+        public EmpresaCliente getAllInfoEmpresaClienteById(int id)
+        {
+            IQueryable<EmpresaCliente> query = _checkAppContext.EmpresaClientes
+           .Include(e => e.Enderecos)
+           .Include(e => e.Telefones);
+
+            return query.AsNoTracking()
+            .Where(e => e.Id == id).FirstOrDefault();  
+        }
     }
 }

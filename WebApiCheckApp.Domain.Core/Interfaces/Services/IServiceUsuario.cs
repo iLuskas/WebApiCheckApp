@@ -7,5 +7,6 @@ namespace WebApiCheckApp.Domain.Core.Interfaces.Services
 {
     public interface IServiceUsuario : IServiceBase<Usuario>
     {
+        Usuario GetUserByUsernameAndPass(Usuario usuario);
     }
 }

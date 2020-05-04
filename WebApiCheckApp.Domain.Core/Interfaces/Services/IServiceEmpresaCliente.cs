@@ -9,5 +9,6 @@ namespace WebApiCheckApp.Domain.Core.Interfaces.Services
     public interface IServiceEmpresaCliente : IServiceBase<EmpresaCliente>
     {
         IEnumerable<EmpresaCliente> getAllInfoEmpresaCliente();
+        EmpresaCliente getAllInfoEmpresaClienteById(int id);
     }
 }

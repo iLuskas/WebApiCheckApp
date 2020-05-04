@@ -34,11 +34,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Lucaum-PC\\source\\repos\\WebApiCheckApp\\webApiCheckApp.Application.DTO\\webApiCheckApp.Application.DTO.csproj",
+      "projectUniqueName": "c:\\Users\\Lucaum-PC\\source\\repos\\WebApiCheckApp\\webApiCheckApp.Application.DTO\\webApiCheckApp.Application.DTO.csproj",
       "projectName": "webApiCheckApp.Application.DTO",
-      "projectPath": "C:\\Users\\Lucaum-PC\\source\\repos\\WebApiCheckApp\\webApiCheckApp.Application.DTO\\webApiCheckApp.Application.DTO.csproj",
+      "projectPath": "c:\\Users\\Lucaum-PC\\source\\repos\\WebApiCheckApp\\webApiCheckApp.Application.DTO\\webApiCheckApp.Application.DTO.csproj",
       "packagesPath": "C:\\Users\\Lucaum-PC\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Lucaum-PC\\source\\repos\\WebApiCheckApp\\webApiCheckApp.Application.DTO\\obj\\",
+      "outputPath": "c:\\Users\\Lucaum-PC\\source\\repos\\WebApiCheckApp\\webApiCheckApp.Application.DTO\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Microsoft\\Xamarin\\NuGet\\",
@@ -60,8 +60,8 @@
       "frameworks": {
         "netcoreapp3.0": {
           "projectReferences": {
-            "C:\\Users\\Lucaum-PC\\source\\repos\\WebApiCheckApp\\WebApiCheckApp.Domain\\WebApiCheckApp.Domain.csproj": {
-              "projectPath": "C:\\Users\\Lucaum-PC\\source\\repos\\WebApiCheckApp\\WebApiCheckApp.Domain\\WebApiCheckApp.Domain.csproj"
+            "c:\\Users\\Lucaum-PC\\source\\repos\\WebApiCheckApp\\WebApiCheckApp.Domain\\WebApiCheckApp.Domain.csproj": {
+              "projectPath": "c:\\Users\\Lucaum-PC\\source\\repos\\WebApiCheckApp\\WebApiCheckApp.Domain\\WebApiCheckApp.Domain.csproj"
             }
           }
         }

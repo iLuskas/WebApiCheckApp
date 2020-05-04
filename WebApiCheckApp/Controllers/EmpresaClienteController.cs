@@ -53,6 +53,22 @@ namespace WebApiCheckApp.Controllers
         }
 
         // GET  api/values/id
+        [HttpGet("getAllInfoEmpresaClienteById/{id}")]
+        public ActionResult<string> getAllInfoEmpresaClienteById(int id)
+        {
+            try
+            {
+                return Ok(_applicationServiceEmpresaCliente.getAllInfoEmpresaClienteById(id));
+            }
+            catch (Exception)
+            {
+
+                return StatusCode(StatusCodes.Status500InternalServerError, "Banco de dados Falhou - método GETBYID");
+            }
+
+        }
+
+        // GET  api/values/id
         [HttpGet("{id}")]
         public ActionResult<string> Get(int id)
         {
@@ -75,10 +91,10 @@ namespace WebApiCheckApp.Controllers
             try
             {
                 if (empresaClienteDTO == null)
-                    return NotFound(new { message = "Usuário inválidos!" });
+                    return NotFound(new { message = "Empresa inválida!" });
 
                 _applicationServiceEmpresaCliente.Add(empresaClienteDTO);
-                return Ok("Usuário Cadastrado com sucesso!");
+                return Ok("Empresa Cadastrada com sucesso!");
             }
             catch (Exception)
             {
@@ -94,10 +110,10 @@ namespace WebApiCheckApp.Controllers
             try
             {
                 if (empresaClienteDTO == null)
-                    return NotFound(new { message = "Usuário inválidos!" });
+                    return NotFound(new { message = "Empresa inválida!" });
 
                 _applicationServiceEmpresaCliente.Update(empresaClienteDTO);
-                return Ok("Usuário Atualizado com sucesso!");
+                return Ok("Empresa Atualizada com sucesso!");
             }
             catch (Exception)
             {
@@ -113,10 +129,10 @@ namespace WebApiCheckApp.Controllers
             try
             {
                 if (empresaClienteDTO == null)
-                    return NotFound(new { message = "Usuário inválidos!" });
+                    return NotFound(new { message = "Empresa inválida!" });
 
                 _applicationServiceEmpresaCliente.Remove(empresaClienteDTO);
-                return Ok("Usuário Removido com sucesso!");
+                return Ok("Empresa Removida com sucesso!");
             }
             catch (Exception)
             {

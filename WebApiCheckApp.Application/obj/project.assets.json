@@ -855,11 +855,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Lucaum-PC\\source\\repos\\WebApiCheckApp\\WebApiCheckApp.Application\\WebApiCheckApp.Application.csproj",
+      "projectUniqueName": "c:\\Users\\Lucaum-PC\\source\\repos\\WebApiCheckApp\\WebApiCheckApp.Application\\WebApiCheckApp.Application.csproj",
       "projectName": "WebApiCheckApp.Application",
-      "projectPath": "C:\\Users\\Lucaum-PC\\source\\repos\\WebApiCheckApp\\WebApiCheckApp.Application\\WebApiCheckApp.Application.csproj",
+      "projectPath": "c:\\Users\\Lucaum-PC\\source\\repos\\WebApiCheckApp\\WebApiCheckApp.Application\\WebApiCheckApp.Application.csproj",
       "packagesPath": "C:\\Users\\Lucaum-PC\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Lucaum-PC\\source\\repos\\WebApiCheckApp\\WebApiCheckApp.Application\\obj\\",
+      "outputPath": "c:\\Users\\Lucaum-PC\\source\\repos\\WebApiCheckApp\\WebApiCheckApp.Application\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Microsoft\\Xamarin\\NuGet\\",
@@ -881,11 +881,11 @@
       "frameworks": {
         "netcoreapp3.0": {
           "projectReferences": {
-            "C:\\Users\\Lucaum-PC\\source\\repos\\WebApiCheckApp\\webApiCheckApp.Application.DTO\\webApiCheckApp.Application.DTO.csproj": {
-              "projectPath": "C:\\Users\\Lucaum-PC\\source\\repos\\WebApiCheckApp\\webApiCheckApp.Application.DTO\\webApiCheckApp.Application.DTO.csproj"
+            "c:\\Users\\Lucaum-PC\\source\\repos\\WebApiCheckApp\\webApiCheckApp.Application.DTO\\webApiCheckApp.Application.DTO.csproj": {
+              "projectPath": "c:\\Users\\Lucaum-PC\\source\\repos\\WebApiCheckApp\\webApiCheckApp.Application.DTO\\webApiCheckApp.Application.DTO.csproj"
             },
-            "C:\\Users\\Lucaum-PC\\source\\repos\\WebApiCheckApp\\WebApiCheckApp.Domain.Core\\WebApiCheckApp.Domain.Core.csproj": {
-              "projectPath": "C:\\Users\\Lucaum-PC\\source\\repos\\WebApiCheckApp\\WebApiCheckApp.Domain.Core\\WebApiCheckApp.Domain.Core.csproj"
+            "c:\\Users\\Lucaum-PC\\source\\repos\\WebApiCheckApp\\WebApiCheckApp.Domain.Core\\WebApiCheckApp.Domain.Core.csproj": {
+              "projectPath": "c:\\Users\\Lucaum-PC\\source\\repos\\WebApiCheckApp\\WebApiCheckApp.Domain.Core\\WebApiCheckApp.Domain.Core.csproj"
             }
           }
         }

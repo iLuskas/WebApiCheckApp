@@ -14,7 +14,7 @@ namespace WebApiCheckApp.Domain.Models
         [MaxLength(14)]
         public string Inscricao_estadual { get; set; }
 
-        public List<Endereco> Enderecos { get; set; }
-        public List<Telefone> Telefones { get; set; }
+        public virtual List<Endereco> Enderecos { get; set; }
+        public virtual List<Telefone> Telefones { get; set; }
     }
 }

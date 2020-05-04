@@ -28,7 +28,7 @@ namespace WebApiCheckApp.Data
 
         public IDbContextTransaction InitTransacao()
         {
-            if (Transaction == null) 
+            if (Transaction == null)
                 Transaction = this.Database.BeginTransaction();
 
             return Transaction;
@@ -37,8 +37,8 @@ namespace WebApiCheckApp.Data
 
         private void RollBack()
         {
-            if (Transaction != null)            
-                Transaction.Rollback();            
+            if (Transaction != null)
+                Transaction.Rollback();
         }
 
         private void Salvar()
@@ -70,13 +70,18 @@ namespace WebApiCheckApp.Data
             Salvar();
             Commit();
         }
-
-        protected override void OnConfiguring(DbContextOptionsBuilder options)
-         => options.UseSqlServer("data source=LAPTOP-3VUFSI4U\\SQLEXPRESS;initial catalog=checkApp;integrated security=True;MultipleActiveResultSets=True;App=EntityFramework");
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
             modelBuilder.Entity<Usuario>().ToTable("Usuario");
-            modelBuilder.Entity<EmpresaCliente>().ToTable("EmpresaCliente");
+
+            modelBuilder.Entity<EmpresaCliente>().ToTable("EmpresaCliente")
+                .HasMany(e => e.Enderecos).WithOne(e => e.EmpresaCliente)
+                .OnDelete(DeleteBehavior.Cascade);
+
+            modelBuilder.Entity<EmpresaCliente>().ToTable("EmpresaCliente")
+                .HasMany(e => e.Telefones).WithOne(e => e.EmpresaCliente)
+                .OnDelete(DeleteBehavior.Cascade);
+
             modelBuilder.Entity<Endereco>().ToTable("Endereco");
             modelBuilder.Entity<Telefone>().ToTable("Telefone");
             modelBuilder.Entity<Perfil>().ToTable("Perfil");

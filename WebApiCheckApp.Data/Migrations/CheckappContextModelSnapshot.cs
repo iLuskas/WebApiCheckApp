@@ -80,23 +80,15 @@ namespace WebApiCheckApp.Infrastruture.Data.Migrations
                         .HasColumnType("nvarchar(50)")
                         .HasMaxLength(50);
 
-                    b.Property<int>("Percentual_end")
-                        .HasColumnType("int");
-
                     b.Property<string>("Rua_end")
                         .HasColumnType("nvarchar(50)")
                         .HasMaxLength(50);
 
-                    b.Property<int>("Status_end")
-                        .HasColumnType("int");
-
-                    b.Property<string>("Tipo_end")
-                        .HasColumnType("nvarchar(20)")
-                        .HasMaxLength(20);
-
                     b.HasKey("Id");
 
                     b.HasIndex("EmpresaClienteId");
+
+                    b.HasIndex("FuncionarioId");
 
                     b.ToTable("Endereco");
                 });
@@ -158,20 +150,13 @@ namespace WebApiCheckApp.Infrastruture.Data.Migrations
                     b.Property<int?>("FuncionarioId")
                         .HasColumnType("int");
 
-                    b.Property<int>("Percentual_tel")
-                        .HasColumnType("int");
-
-                    b.Property<int>("Status_tel")
-                        .HasColumnType("int");
-
                     b.Property<string>("Telefone_tel")
-                        .HasColumnType("nvarchar(max)");
-
-                    b.Property<string>("Tipo_tel")
-                        .HasColumnType("nvarchar(max)");
+                        .HasColumnType("nvarchar(9)")
+                        .HasMaxLength(9);
 
                     b.Property<string>("ddd_tel")
-                        .HasColumnType("nvarchar(max)");
+                        .HasColumnType("nvarchar(3)")
+                        .HasMaxLength(3);
 
                     b.HasKey("Id");
 
@@ -202,9 +187,14 @@ namespace WebApiCheckApp.Infrastruture.Data.Migrations
 
             modelBuilder.Entity("WebApiCheckApp.Domain.Models.Endereco", b =>
                 {
-                    b.HasOne("WebApiCheckApp.Domain.Models.EmpresaCliente", null)
+                    b.HasOne("WebApiCheckApp.Domain.Models.EmpresaCliente", "EmpresaCliente")
                         .WithMany("Enderecos")
-                        .HasForeignKey("EmpresaClienteId");
+                        .HasForeignKey("EmpresaClienteId")
+                        .OnDelete(DeleteBehavior.Cascade);
+
+                    b.HasOne("WebApiCheckApp.Domain.Models.Funcionario", "Funcionario")
+                        .WithMany()
+                        .HasForeignKey("FuncionarioId");
                 });
 
             modelBuilder.Entity("WebApiCheckApp.Domain.Models.Funcionario", b =>
@@ -218,7 +208,8 @@ namespace WebApiCheckApp.Infrastruture.Data.Migrations
                 {
                     b.HasOne("WebApiCheckApp.Domain.Models.EmpresaCliente", "EmpresaCliente")
                         .WithMany("Telefones")
-                        .HasForeignKey("EmpresaClienteId");
+                        .HasForeignKey("EmpresaClienteId")
+                        .OnDelete(DeleteBehavior.Cascade);
 
                     b.HasOne("WebApiCheckApp.Domain.Models.Funcionario", "Funcionario")
                         .WithMany()

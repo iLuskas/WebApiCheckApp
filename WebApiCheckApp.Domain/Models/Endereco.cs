@@ -8,9 +8,9 @@ namespace WebApiCheckApp.Domain.Models
     public class Endereco : Base
     {
         public int? FuncionarioId { get; set; }
-        public Funcionario Funcionario { get; }
+        public virtual Funcionario Funcionario { get; set; }
         public int? EmpresaClienteId { get; set; }
-        public EmpresaCliente EmpresaCliente { get; }
+        public virtual EmpresaCliente EmpresaCliente { get; set; }
         [MaxLength(50)]
         public string Pais_end { get; set; }
         [MaxLength(50)]
@@ -25,9 +25,5 @@ namespace WebApiCheckApp.Domain.Models
         public string Numero_end { get; set; }
         [MaxLength(8)]
         public string Cep_end { get; set; }
-        [MaxLength(20)]
-        public string Tipo_end { get; set; }
-        public int Status_end { get; set; }
-        public int Percentual_end { get; set; }
     }
 }

@@ -6,6 +6,6 @@ namespace webApiCheckApp.Application.DTO.DTO
 {
     public class BaseDTO
     {
-        public int Id { get; set; }
+        public int? Id { get; set; }
     }
 }

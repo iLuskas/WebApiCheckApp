@@ -6,7 +6,7 @@ namespace webApiCheckApp.Application.DTO.DTO
 {
     public class UsuarioDTO : BaseDTO
     {
-         public string Login { get; set; }
+        public string Login { get; set; }
         public string Senha { get; set; }
     }
 }
