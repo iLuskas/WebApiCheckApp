@@ -48,12 +48,16 @@ namespace WebApiCheckApp.Application.Services
 
         public void Remove(EnderecoDTO obj)
         {
-            throw new NotImplementedException();
+            var objEntity = _mapper.Map<Endereco>(obj);
+
+            _serviceEndereco.Remove(objEntity);
         }
 
         public void Update(EnderecoDTO obj)
         {
-            throw new NotImplementedException();
+            var objEntity = _mapper.Map<Endereco>(obj);
+
+            _serviceEndereco.Update(objEntity);
         }
     }
 }

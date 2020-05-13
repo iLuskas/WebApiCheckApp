@@ -7,5 +7,7 @@ namespace WebApiCheckApp.Domain.Core.Interfaces.Repositorys
 {
     public interface IRepositoryFuncionario : IRepositoryBase<Funcionario>
     {
+        IEnumerable<Funcionario> getAllInfoFuncionario();
+        Funcionario getAllInfoFuncionarioById(int id);
     }
 }

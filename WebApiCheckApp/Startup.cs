@@ -32,7 +32,7 @@ namespace WebApiCheckApp
         public void ConfigureServices(IServiceCollection services)
         {
             services.AddDbContext<CheckappContext>(options => 
-                options.UseSqlServer(Configuration.GetConnectionString("DefaultConnection")));
+                options.UseSqlServer(Configuration.GetConnectionString("TesteConnection")));
             services.AddAutoMapper(new[] { typeof(MappingEntities).Assembly });
             services.AddCors();
             services.AddControllers();            

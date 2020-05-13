@@ -7,5 +7,7 @@ namespace WebApiCheckApp.Domain.Core.Interfaces.Services
 {
     public interface IServiceFuncionario : IServiceBase<Funcionario>
     {
+        IEnumerable<Funcionario> GetAllInfoFuncionario();
+        Funcionario GetAllInfoFuncionarioById(int id);
     }
 }

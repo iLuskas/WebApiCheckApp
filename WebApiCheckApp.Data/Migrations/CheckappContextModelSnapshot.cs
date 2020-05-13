@@ -101,23 +101,30 @@ namespace WebApiCheckApp.Infrastruture.Data.Migrations
                         .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
 
                     b.Property<string>("Cpf")
-                        .HasColumnType("nvarchar(max)");
+                        .HasColumnType("nvarchar(12)")
+                        .HasMaxLength(12);
 
                     b.Property<string>("Email")
-                        .HasColumnType("nvarchar(max)");
+                        .HasColumnType("nvarchar(50)")
+                        .HasMaxLength(50);
 
                     b.Property<string>("Nome")
-                        .HasColumnType("nvarchar(max)");
+                        .HasColumnType("nvarchar(200)")
+                        .HasMaxLength(200);
 
-                    b.Property<int?>("PerfilId")
+                    b.Property<int>("PerfilId")
                         .HasColumnType("int");
 
-                    b.Property<int>("idPerfil")
+                    b.Property<int?>("UsuarioId")
                         .HasColumnType("int");
 
                     b.HasKey("Id");
 
                     b.HasIndex("PerfilId");
+
+                    b.HasIndex("UsuarioId")
+                        .IsUnique()
+                        .HasFilter("[UsuarioId] IS NOT NULL");
 
                     b.ToTable("Funcionario");
                 });
@@ -130,7 +137,8 @@ namespace WebApiCheckApp.Infrastruture.Data.Migrations
                         .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
 
                     b.Property<string>("Funcao_perfil")
-                        .HasColumnType("nvarchar(max)");
+                        .HasColumnType("nvarchar(50)")
+                        .HasMaxLength(50);
 
                     b.HasKey("Id");
 
@@ -193,15 +201,23 @@ namespace WebApiCheckApp.Infrastruture.Data.Migrations
                         .OnDelete(DeleteBehavior.Cascade);
 
                     b.HasOne("WebApiCheckApp.Domain.Models.Funcionario", "Funcionario")
-                        .WithMany()
-                        .HasForeignKey("FuncionarioId");
+                        .WithMany("Enderecos")
+                        .HasForeignKey("FuncionarioId")
+                        .OnDelete(DeleteBehavior.Cascade);
                 });
 
             modelBuilder.Entity("WebApiCheckApp.Domain.Models.Funcionario", b =>
                 {
                     b.HasOne("WebApiCheckApp.Domain.Models.Perfil", "Perfil")
                         .WithMany()
-                        .HasForeignKey("PerfilId");
+                        .HasForeignKey("PerfilId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.HasOne("WebApiCheckApp.Domain.Models.Usuario", "Usuario")
+                        .WithOne("Funcionario")
+                        .HasForeignKey("WebApiCheckApp.Domain.Models.Funcionario", "UsuarioId")
+                        .OnDelete(DeleteBehavior.Cascade);
                 });
 
             modelBuilder.Entity("WebApiCheckApp.Domain.Models.Telefone", b =>
@@ -212,8 +228,9 @@ namespace WebApiCheckApp.Infrastruture.Data.Migrations
                         .OnDelete(DeleteBehavior.Cascade);
 
                     b.HasOne("WebApiCheckApp.Domain.Models.Funcionario", "Funcionario")
-                        .WithMany()
-                        .HasForeignKey("FuncionarioId");
+                        .WithMany("Telefones")
+                        .HasForeignKey("FuncionarioId")
+                        .OnDelete(DeleteBehavior.Cascade);
                 });
 #pragma warning restore 612, 618
         }

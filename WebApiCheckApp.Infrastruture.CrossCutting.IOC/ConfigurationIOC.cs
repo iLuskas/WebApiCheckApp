@@ -22,6 +22,8 @@ namespace WebApiCheckApp.Infrastruture.CrossCutting.IOC
             builder.RegisterType<ApplicationServiceEmpresaCliente>().As<IApplicationServiceEmpresaCliente>();
             builder.RegisterType<ApplicationServiceEndereco>().As<IApplicationServiceEndereco>();
             builder.RegisterType<ApplicationServiceTelefone>().As<IApplicationServiceTelefone>();
+            builder.RegisterType<ApplicationServicePerfil>().As<IApplicationServicePerfil>();
+            builder.RegisterType<ApplicationServiceFuncionario>().As<IApplicationServiceFuncionario>();
             #endregion
 
             #region IOC Services
@@ -29,6 +31,8 @@ namespace WebApiCheckApp.Infrastruture.CrossCutting.IOC
             builder.RegisterType<ServiceEmpresaCliente>().As<IServiceEmpresaCliente>();
             builder.RegisterType<ServiceEndereco>().As<IServiceEndereco>();
             builder.RegisterType<ServiceTelefone>().As<IServiceTelefone>();
+            builder.RegisterType<ServicePerfil>().As<IServicePerfil>();
+            builder.RegisterType<ServiceFuncionario>().As<IServiceFuncionario>();
             #endregion
 
             #region IOC Repositorys SQL
@@ -36,6 +40,8 @@ namespace WebApiCheckApp.Infrastruture.CrossCutting.IOC
             builder.RegisterType<RepositoryEmpresaCliente>().As<IRepositoryEmpresaCliente>();
             builder.RegisterType<RepositoryEndereco>().As<IRepositoryEndereco>();
             builder.RegisterType<RepositoryTelefone>().As<IRepositoryTelefone>();
+            builder.RegisterType<RepositoryPerfil>().As<IRepositoryPerfil>();
+            builder.RegisterType<RepositoryFuncionario>().As<IRepositoryFuncionario>();
             #endregion
 
             #endregion

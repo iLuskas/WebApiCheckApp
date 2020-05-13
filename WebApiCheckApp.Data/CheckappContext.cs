@@ -19,7 +19,7 @@ namespace WebApiCheckApp.Data
         public IDbContextTransaction Transaction { get; set; }
 
         public DbSet<Usuario> Usuarios { get; set; }
-        public DbSet<Funcionario> funcionarios { get; set; }
+        public DbSet<Funcionario> Funcionarios { get; set; }
         public DbSet<Perfil> Perfils { get; set; }
         public DbSet<EmpresaCliente> EmpresaClientes { get; set; }
         public DbSet<Endereco> Enderecos { get; set; }
@@ -78,14 +78,25 @@ namespace WebApiCheckApp.Data
                 .HasMany(e => e.Enderecos).WithOne(e => e.EmpresaCliente)
                 .OnDelete(DeleteBehavior.Cascade);
 
-            modelBuilder.Entity<EmpresaCliente>().ToTable("EmpresaCliente")
-                .HasMany(e => e.Telefones).WithOne(e => e.EmpresaCliente)
+            modelBuilder.Entity<EmpresaCliente>().HasMany(e => e.Telefones)
+                .WithOne(e => e.EmpresaCliente)
                 .OnDelete(DeleteBehavior.Cascade);
 
             modelBuilder.Entity<Endereco>().ToTable("Endereco");
             modelBuilder.Entity<Telefone>().ToTable("Telefone");
             modelBuilder.Entity<Perfil>().ToTable("Perfil");
-            modelBuilder.Entity<Funcionario>().ToTable("Funcionario");
+
+            modelBuilder.Entity<Funcionario>().ToTable("Funcionario")
+                .HasMany(e => e.Enderecos).WithOne(e => e.Funcionario)
+                .OnDelete(DeleteBehavior.Cascade);
+
+            modelBuilder.Entity<Funcionario>().HasMany(t => t.Telefones)
+                .WithOne(t => t.Funcionario)
+                .OnDelete(DeleteBehavior.Cascade);
+
+            modelBuilder.Entity<Funcionario>().HasOne(t => t.Usuario)
+                .WithOne(t => t.Funcionario)
+                .OnDelete(DeleteBehavior.Cascade);
 
             base.OnModelCreating(modelBuilder);
         }

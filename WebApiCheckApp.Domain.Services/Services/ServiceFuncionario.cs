@@ -15,5 +15,15 @@ namespace WebApiCheckApp.Domain.Services.Services
         {
             _repositoryFuncionario = repositoryFuncionario;
         }
+
+        public IEnumerable<Funcionario> GetAllInfoFuncionario()
+        {
+           return _repositoryFuncionario.getAllInfoFuncionario();
+        }
+
+        public Funcionario GetAllInfoFuncionarioById(int id)
+        {
+            return _repositoryFuncionario.getAllInfoFuncionarioById(id);
+        }
     }
 }

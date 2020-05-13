@@ -1,7 +1,6 @@
 ﻿using Microsoft.EntityFrameworkCore;
 using System.Collections.Generic;
 using System.Linq;
-using System.Threading.Tasks;
 using WebApiCheckApp.Data;
 using WebApiCheckApp.Domain.Core.Interfaces.Repositorys;
 using WebApiCheckApp.Domain.Models;

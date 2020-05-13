@@ -20,6 +20,13 @@ namespace WebApiCheckApp.Infrastruture.CrossCutting.Adapter
 
             CreateMap<Endereco, EnderecoDTO>().ReverseMap();
             CreateMap<Telefone, TelefoneDTO>().ReverseMap();
+            CreateMap<Perfil, PerfilDTO>().ReverseMap();
+
+            CreateMap<Funcionario, FuncionarioDTO>()
+                .ForMember(dest => dest.UsuarioId, opt => opt.MapFrom(src => src.UsuarioId))
+                .ForMember(dest => dest.PerfilId, opt => opt.MapFrom(src => src.PerfilId))
+                .ForMember(dest => dest.enderecoDTOs, opt => opt.MapFrom(src => src.Enderecos))
+                .ForMember(dest => dest.telefoneDTOs, opt => opt.MapFrom(src => src.Telefones)).ReverseMap();
         }
     }
 }
