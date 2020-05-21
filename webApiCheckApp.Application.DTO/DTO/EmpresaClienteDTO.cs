@@ -12,6 +12,7 @@ namespace webApiCheckApp.Application.DTO.DTO
 
         public List<EnderecoDTO> enderecoDTOs { get; set; }
         public List<TelefoneDTO> telefoneDTOs { get; set; }
+        public List<Equipamento_SegurancaDTO> EquipamentosDTOs { get; set;}
 
     }
 }

@@ -24,6 +24,9 @@ namespace WebApiCheckApp.Infrastruture.CrossCutting.IOC
             builder.RegisterType<ApplicationServiceTelefone>().As<IApplicationServiceTelefone>();
             builder.RegisterType<ApplicationServicePerfil>().As<IApplicationServicePerfil>();
             builder.RegisterType<ApplicationServiceFuncionario>().As<IApplicationServiceFuncionario>();
+            builder.RegisterType<ApplicationServiceTipo_Equipamento>().As<IApplicationServiceTipo_Equipamento>();
+            builder.RegisterType<ApplicationServiceExtintor>().As<IApplicationServiceExtintor>();
+            builder.RegisterType<ApplicationServiceEquipamento_Seguranca>().As<IApplicationServiceEquipamento_Seguranca>();
             #endregion
 
             #region IOC Services
@@ -33,6 +36,9 @@ namespace WebApiCheckApp.Infrastruture.CrossCutting.IOC
             builder.RegisterType<ServiceTelefone>().As<IServiceTelefone>();
             builder.RegisterType<ServicePerfil>().As<IServicePerfil>();
             builder.RegisterType<ServiceFuncionario>().As<IServiceFuncionario>();
+            builder.RegisterType<ServiceTipo_Equipamento>().As<IServiceTipo_Equipamento>();
+            builder.RegisterType<ServiceEquipamento_Seguranca>().As<IServiceEquipamento_Seguranca>();
+            builder.RegisterType<ServiceExtintor>().As<IServiceExtintor>();
             #endregion
 
             #region IOC Repositorys SQL
@@ -42,6 +48,9 @@ namespace WebApiCheckApp.Infrastruture.CrossCutting.IOC
             builder.RegisterType<RepositoryTelefone>().As<IRepositoryTelefone>();
             builder.RegisterType<RepositoryPerfil>().As<IRepositoryPerfil>();
             builder.RegisterType<RepositoryFuncionario>().As<IRepositoryFuncionario>();
+            builder.RegisterType<RepositoryTipo_equipamento>().As<IRepositoryTipo_Equipamento>();
+            builder.RegisterType<RepositoryEquipamento_Seguranca>().As<IRepositoryEquipamento_Seguranca>();
+            builder.RegisterType<RepositoryExtintor>().As<IRepositoryExtintor>();
             #endregion
 
             #endregion

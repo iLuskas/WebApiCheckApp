@@ -93,6 +93,79 @@ namespace WebApiCheckApp.Infrastruture.Data.Migrations
                     b.ToTable("Endereco");
                 });
 
+            modelBuilder.Entity("WebApiCheckApp.Domain.Models.Equipamento_Seguranca", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int")
+                        .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
+
+                    b.Property<DateTime>("DataCriacao_equipamento")
+                        .HasColumnType("datetime2");
+
+                    b.Property<int>("EmpresaClienteId")
+                        .HasColumnType("int");
+
+                    b.Property<string>("Localizacao_equipamento")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("QrCode")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<DateTime>("Qrcode_data_geracao")
+                        .HasColumnType("datetime2");
+
+                    b.Property<int>("Tipo_equipamentoId")
+                        .HasColumnType("int");
+
+                    b.HasKey("Id");
+
+                    b.HasIndex("EmpresaClienteId");
+
+                    b.HasIndex("Tipo_equipamentoId");
+
+                    b.ToTable("Equipamento_Seguranca");
+                });
+
+            modelBuilder.Entity("WebApiCheckApp.Domain.Models.Extintor", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int")
+                        .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
+
+                    b.Property<DateTime>("Ano_fabricacao")
+                        .HasColumnType("datetime2");
+
+                    b.Property<double>("Capacidade_ext")
+                        .HasColumnType("float");
+
+                    b.Property<int>("EquipamentoId")
+                        .HasColumnType("int");
+
+                    b.Property<string>("Fabricante_ext")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<int>("Num_ext")
+                        .HasColumnType("int");
+
+                    b.Property<double>("Peso_ext")
+                        .HasColumnType("float");
+
+                    b.Property<string>("SeloInmetro_ext")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("Tipo_ext")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.HasKey("Id");
+
+                    b.HasIndex("EquipamentoId")
+                        .IsUnique();
+
+                    b.ToTable("Extintor");
+                });
+
             modelBuilder.Entity("WebApiCheckApp.Domain.Models.Funcionario", b =>
                 {
                     b.Property<int>("Id")
@@ -175,6 +248,21 @@ namespace WebApiCheckApp.Infrastruture.Data.Migrations
                     b.ToTable("Telefone");
                 });
 
+            modelBuilder.Entity("WebApiCheckApp.Domain.Models.Tipo_equipamento", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int")
+                        .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
+
+                    b.Property<string>("Tipo")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.HasKey("Id");
+
+                    b.ToTable("Tipo_equipamento");
+                });
+
             modelBuilder.Entity("WebApiCheckApp.Domain.Models.Usuario", b =>
                 {
                     b.Property<int>("Id")
@@ -204,6 +292,30 @@ namespace WebApiCheckApp.Infrastruture.Data.Migrations
                         .WithMany("Enderecos")
                         .HasForeignKey("FuncionarioId")
                         .OnDelete(DeleteBehavior.Cascade);
+                });
+
+            modelBuilder.Entity("WebApiCheckApp.Domain.Models.Equipamento_Seguranca", b =>
+                {
+                    b.HasOne("WebApiCheckApp.Domain.Models.EmpresaCliente", "EmpresaCliente")
+                        .WithMany("Equipamentos")
+                        .HasForeignKey("EmpresaClienteId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.HasOne("WebApiCheckApp.Domain.Models.Tipo_equipamento", "Tipo")
+                        .WithMany()
+                        .HasForeignKey("Tipo_equipamentoId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+                });
+
+            modelBuilder.Entity("WebApiCheckApp.Domain.Models.Extintor", b =>
+                {
+                    b.HasOne("WebApiCheckApp.Domain.Models.Equipamento_Seguranca", "Equipamento")
+                        .WithOne("Extintor")
+                        .HasForeignKey("WebApiCheckApp.Domain.Models.Extintor", "EquipamentoId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
                 });
 
             modelBuilder.Entity("WebApiCheckApp.Domain.Models.Funcionario", b =>

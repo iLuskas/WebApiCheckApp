@@ -24,6 +24,8 @@ namespace WebApiCheckApp.Data
         public DbSet<EmpresaCliente> EmpresaClientes { get; set; }
         public DbSet<Endereco> Enderecos { get; set; }
         public DbSet<Telefone> Telefones { get; set; }
+        public DbSet<Equipamento_Seguranca> Equipamento_Segurancas { get; set; }
+        public DbSet<Extintor> Extintors { get; set; }
 
 
         public IDbContextTransaction InitTransacao()
@@ -73,12 +75,20 @@ namespace WebApiCheckApp.Data
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
             modelBuilder.Entity<Usuario>().ToTable("Usuario");
+            
+            modelBuilder.Entity<Usuario>().HasOne(t => t.Funcionario)
+                .WithOne(t => t.Usuario)
+                .OnDelete(DeleteBehavior.Cascade);
 
             modelBuilder.Entity<EmpresaCliente>().ToTable("EmpresaCliente")
                 .HasMany(e => e.Enderecos).WithOne(e => e.EmpresaCliente)
                 .OnDelete(DeleteBehavior.Cascade);
 
             modelBuilder.Entity<EmpresaCliente>().HasMany(e => e.Telefones)
+                .WithOne(e => e.EmpresaCliente)
+                .OnDelete(DeleteBehavior.Cascade);
+
+            modelBuilder.Entity<EmpresaCliente>().HasMany(e => e.Equipamentos)
                 .WithOne(e => e.EmpresaCliente)
                 .OnDelete(DeleteBehavior.Cascade);
 
@@ -94,9 +104,11 @@ namespace WebApiCheckApp.Data
                 .WithOne(t => t.Funcionario)
                 .OnDelete(DeleteBehavior.Cascade);
 
-            modelBuilder.Entity<Funcionario>().HasOne(t => t.Usuario)
-                .WithOne(t => t.Funcionario)
+            modelBuilder.Entity<Equipamento_Seguranca>().ToTable("Equipamento_Seguranca")
+                .HasOne(e => e.Extintor).WithOne(eq => eq.Equipamento)
                 .OnDelete(DeleteBehavior.Cascade);
+
+            modelBuilder.Entity<Extintor>().ToTable("Extintor");
 
             base.OnModelCreating(modelBuilder);
         }

@@ -6,8 +6,8 @@ namespace WebApiCheckApp.Domain.Models
 {
     public class Extintor : Base
     {
-        public int IdEquipamento { get; set; }
-        public virtual Equipamento_Seguranca Equipamento { get; set; }
+        public int EquipamentoId { get; set; }
+        public  Equipamento_Seguranca Equipamento { get; set; }
         public int Num_ext { get; set; }
         public string SeloInmetro_ext { get; set; }
         public string Fabricante_ext { get; set; }

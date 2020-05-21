@@ -16,5 +16,6 @@ namespace WebApiCheckApp.Domain.Models
 
         public virtual List<Endereco> Enderecos { get; set; }
         public virtual List<Telefone> Telefones { get; set; }
+        public virtual List<Equipamento_Seguranca> Equipamentos { get; set;}
     }
 }

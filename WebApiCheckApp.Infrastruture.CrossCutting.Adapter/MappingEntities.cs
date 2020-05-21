@@ -16,7 +16,8 @@ namespace WebApiCheckApp.Infrastruture.CrossCutting.Adapter
 
             CreateMap<EmpresaCliente, EmpresaClienteDTO>()
                 .ForMember(dest => dest.enderecoDTOs, opt => opt.MapFrom(src => src.Enderecos))
-                .ForMember(dest => dest.telefoneDTOs, opt => opt.MapFrom(src => src.Telefones)).ReverseMap();
+                .ForMember(dest => dest.telefoneDTOs, opt => opt.MapFrom(src => src.Telefones))
+                .ForMember(dest => dest.EquipamentosDTOs, opt => opt.MapFrom(src => src.Equipamentos)).ReverseMap();
 
             CreateMap<Endereco, EnderecoDTO>().ReverseMap();
             CreateMap<Telefone, TelefoneDTO>().ReverseMap();
@@ -27,6 +28,10 @@ namespace WebApiCheckApp.Infrastruture.CrossCutting.Adapter
                 .ForMember(dest => dest.PerfilId, opt => opt.MapFrom(src => src.PerfilId))
                 .ForMember(dest => dest.enderecoDTOs, opt => opt.MapFrom(src => src.Enderecos))
                 .ForMember(dest => dest.telefoneDTOs, opt => opt.MapFrom(src => src.Telefones)).ReverseMap();
+
+            CreateMap<Equipamento_Seguranca, Equipamento_SegurancaDTO>().ReverseMap();
+            CreateMap<Tipo_equipamento, Tipo_EquipamentoDTO>().ReverseMap();
+            CreateMap<Extintor, ExtintorDTO>().ReverseMap();
         }
     }
 }

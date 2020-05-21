@@ -16,6 +16,7 @@ using Microsoft.Extensions.Logging;
 using WebApiCheckApp.Data;
 using WebApiCheckApp.Infrastruture.CrossCutting.Adapter;
 using WebApiCheckApp.Infrastruture.CrossCutting.IOC;
+using WebApiCheckApp.Infrastruture.Data;
 
 namespace WebApiCheckApp
 {
@@ -31,7 +32,10 @@ namespace WebApiCheckApp
         // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)
         {
-            services.AddDbContext<CheckappContext>(options => 
+            // services.AddDbContext<CheckappContext>(options => 
+            //     options.UseSqlServer(Configuration.GetConnectionString("DefaultConnection")));
+
+            services.AddDbContext<CheckappContext_HMG>(options =>
                 options.UseSqlServer(Configuration.GetConnectionString("TesteConnection")));
             services.AddAutoMapper(new[] { typeof(MappingEntities).Assembly });
             services.AddCors();

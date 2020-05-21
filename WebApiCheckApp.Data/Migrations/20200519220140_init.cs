@@ -27,7 +27,7 @@ namespace WebApiCheckApp.Infrastruture.Data.Migrations
                 {
                     Id = table.Column<int>(nullable: false)
                         .Annotation("SqlServer:Identity", "1, 1"),
-                    Funcao_perfil = table.Column<string>(nullable: true)
+                    Funcao_perfil = table.Column<string>(maxLength: 50, nullable: true)
                 },
                 constraints: table =>
                 {
@@ -54,11 +54,11 @@ namespace WebApiCheckApp.Infrastruture.Data.Migrations
                 {
                     Id = table.Column<int>(nullable: false)
                         .Annotation("SqlServer:Identity", "1, 1"),
-                    idPerfil = table.Column<int>(nullable: false),
-                    PerfilId = table.Column<int>(nullable: true),
-                    Nome = table.Column<string>(nullable: true),
-                    Cpf = table.Column<string>(nullable: true),
-                    Email = table.Column<string>(nullable: true)
+                    PerfilId = table.Column<int>(nullable: false),
+                    UsuarioId = table.Column<int>(nullable: true),
+                    Nome = table.Column<string>(maxLength: 200, nullable: true),
+                    Cpf = table.Column<string>(maxLength: 12, nullable: true),
+                    Email = table.Column<string>(maxLength: 50, nullable: true)
                 },
                 constraints: table =>
                 {
@@ -68,7 +68,13 @@ namespace WebApiCheckApp.Infrastruture.Data.Migrations
                         column: x => x.PerfilId,
                         principalTable: "Perfil",
                         principalColumn: "Id",
-                        onDelete: ReferentialAction.Restrict);
+                        onDelete: ReferentialAction.Cascade);
+                    table.ForeignKey(
+                        name: "FK_Funcionario_Usuario_UsuarioId",
+                        column: x => x.UsuarioId,
+                        principalTable: "Usuario",
+                        principalColumn: "Id",
+                        onDelete: ReferentialAction.Cascade);
                 });
 
             migrationBuilder.CreateTable(
@@ -101,7 +107,7 @@ namespace WebApiCheckApp.Infrastruture.Data.Migrations
                         column: x => x.FuncionarioId,
                         principalTable: "Funcionario",
                         principalColumn: "Id",
-                        onDelete: ReferentialAction.Restrict);
+                        onDelete: ReferentialAction.Cascade);
                 });
 
             migrationBuilder.CreateTable(
@@ -129,7 +135,7 @@ namespace WebApiCheckApp.Infrastruture.Data.Migrations
                         column: x => x.FuncionarioId,
                         principalTable: "Funcionario",
                         principalColumn: "Id",
-                        onDelete: ReferentialAction.Restrict);
+                        onDelete: ReferentialAction.Cascade);
                 });
 
             migrationBuilder.CreateIndex(
@@ -146,6 +152,13 @@ namespace WebApiCheckApp.Infrastruture.Data.Migrations
                 name: "IX_Funcionario_PerfilId",
                 table: "Funcionario",
                 column: "PerfilId");
+
+            migrationBuilder.CreateIndex(
+                name: "IX_Funcionario_UsuarioId",
+                table: "Funcionario",
+                column: "UsuarioId",
+                unique: true,
+                filter: "[UsuarioId] IS NOT NULL");
 
             migrationBuilder.CreateIndex(
                 name: "IX_Telefone_EmpresaClienteId",
@@ -167,9 +180,6 @@ namespace WebApiCheckApp.Infrastruture.Data.Migrations
                 name: "Telefone");
 
             migrationBuilder.DropTable(
-                name: "Usuario");
-
-            migrationBuilder.DropTable(
                 name: "EmpresaCliente");
 
             migrationBuilder.DropTable(
@@ -177,6 +187,9 @@ namespace WebApiCheckApp.Infrastruture.Data.Migrations
 
             migrationBuilder.DropTable(
                 name: "Perfil");
+
+            migrationBuilder.DropTable(
+                name: "Usuario");
         }
     }
 }
