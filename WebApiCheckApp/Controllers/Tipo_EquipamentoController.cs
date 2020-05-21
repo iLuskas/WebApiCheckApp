@@ -9,9 +9,9 @@ namespace WebApiCheckApp.Controllers
 {
     public class Tipo_EquipamentoController : ControllerBase
     {
-        private readonly IApplicationServiceTipo_equipamento _applicationServiceTipo_Equipamento;
+        private readonly IApplicationServiceTipo_Equipamento _applicationServiceTipo_Equipamento;
 
-        public Tipo_EquipamentoController(IApplicationServiceTipo_equipamento applicationServiceTipo_Equipamento)
+        public Tipo_EquipamentoController(IApplicationServiceTipo_Equipamento applicationServiceTipo_Equipamento)
         {
             _applicationServiceTipo_Equipamento = applicationServiceTipo_Equipamento;
         }
