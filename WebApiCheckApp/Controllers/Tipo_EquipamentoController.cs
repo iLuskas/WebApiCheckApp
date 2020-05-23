@@ -7,6 +7,8 @@ using WebApiCheckApp.Application.Interfaces;
 
 namespace WebApiCheckApp.Controllers
 {
+    [Route("api/[controller]")]
+    [ApiController]
     public class Tipo_EquipamentoController : ControllerBase
     {
         private readonly IApplicationServiceTipo_Equipamento _applicationServiceTipo_Equipamento;

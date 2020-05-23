@@ -15,5 +15,25 @@ namespace WebApiCheckApp.Domain.Services.Services
         {
             _repositoryEquipamento_Seguranca = repositoryEquipamento_Seguranca;
         }
+
+        public IEnumerable<Equipamento_Seguranca> getAllEquipamento()
+        {
+            return _repositoryEquipamento_Seguranca.getAllEquipamento();
+        }
+
+        public IEnumerable<Equipamento_Seguranca> getAllEquipamentoByEmpresaId(int EmpresaId)
+        {
+            return _repositoryEquipamento_Seguranca.getAllEquipamentoByEmpresaId(EmpresaId);
+        }
+
+        public IEnumerable<Equipamento_Seguranca> getAllEquipamentoByEmpresaIdAndTipo(int EmpresaId, int tipoId)
+        {
+            return _repositoryEquipamento_Seguranca.getAllEquipamentoByEmpresaIdAndTipo(EmpresaId, tipoId);
+        }
+
+        public Equipamento_Seguranca getEquipamentoById(int id)
+        {
+            return _repositoryEquipamento_Seguranca.getEquipamentoById(id);
+        }
     }
 }

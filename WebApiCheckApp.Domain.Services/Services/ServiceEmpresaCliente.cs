@@ -16,6 +16,11 @@ namespace WebApiCheckApp.Domain.Services.Services
             _repositoryEmpresaCliente = repositoryEmpresaCliente;
         }
 
+        public EmpresaCliente getAllEquipamentoByIdAndTipo(int empresaId, int tipoId)
+        {
+            return _repositoryEmpresaCliente.getAllEquipamentoByIdAndTipo(empresaId, tipoId);
+        }
+
         public IEnumerable<EmpresaCliente> getAllInfoEmpresaCliente()
         {
             return _repositoryEmpresaCliente.getAllInfoEmpresaCliente();

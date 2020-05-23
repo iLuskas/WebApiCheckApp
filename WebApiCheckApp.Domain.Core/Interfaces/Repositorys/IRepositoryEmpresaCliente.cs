@@ -8,5 +8,6 @@ namespace WebApiCheckApp.Domain.Core.Interfaces.Repositorys
     {
         IEnumerable<EmpresaCliente> getAllInfoEmpresaCliente();
         EmpresaCliente getAllInfoEmpresaClienteById(int id);
+        EmpresaCliente getAllEquipamentoByIdAndTipo(int empresaId, int tipoId);
     }
 }

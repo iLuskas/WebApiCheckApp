@@ -1418,7 +1418,7 @@
           "bin/placeholder/WebApiCheckApp.Domain.Core.dll": {}
         }
       },
-      "WebApiCheckApp.Infrastruture.Data/1.0.0": {
+      "WebApiCheckApp.Infrastructure.Data/1.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v3.0",
         "dependencies": {
@@ -1429,10 +1429,10 @@
           "WebApiCheckApp.Domain": "1.0.0"
         },
         "compile": {
-          "bin/placeholder/WebApiCheckApp.Infrastruture.Data.dll": {}
+          "bin/placeholder/WebApiCheckApp.Infrastructure.Data.dll": {}
         },
         "runtime": {
-          "bin/placeholder/WebApiCheckApp.Infrastruture.Data.dll": {}
+          "bin/placeholder/WebApiCheckApp.Infrastructure.Data.dll": {}
         }
       }
     }
@@ -5410,10 +5410,10 @@
       "path": "../WebApiCheckApp.Domain.Core/WebApiCheckApp.Domain.Core.csproj",
       "msbuildProject": "../WebApiCheckApp.Domain.Core/WebApiCheckApp.Domain.Core.csproj"
     },
-    "WebApiCheckApp.Infrastruture.Data/1.0.0": {
+    "WebApiCheckApp.Infrastructure.Data/1.0.0": {
       "type": "project",
-      "path": "../WebApiCheckApp.Data/WebApiCheckApp.Infrastruture.Data.csproj",
-      "msbuildProject": "../WebApiCheckApp.Data/WebApiCheckApp.Infrastruture.Data.csproj"
+      "path": "../WebApiCheckApp.Data/WebApiCheckApp.Infrastructure.Data.csproj",
+      "msbuildProject": "../WebApiCheckApp.Data/WebApiCheckApp.Infrastructure.Data.csproj"
     }
   },
   "projectFileDependencyGroups": {
@@ -5421,7 +5421,7 @@
       "Microsoft.EntityFrameworkCore >= 3.1.3",
       "Microsoft.EntityFrameworkCore.SqlServer >= 3.1.3",
       "WebApiCheckApp.Domain.Core >= 1.0.0",
-      "WebApiCheckApp.Infrastruture.Data >= 1.0.0"
+      "WebApiCheckApp.Infrastructure.Data >= 1.0.0"
     ]
   },
   "packageFolders": {
@@ -5432,9 +5432,9 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Lucaum-PC\\source\\repos\\WebApiCheckApp\\WebApiCheckApp.Infrastruture.Repository\\WebApiCheckApp.Infrastruture.Repository.csproj",
-      "projectName": "WebApiCheckApp.Infrastruture.Repository",
-      "projectPath": "C:\\Users\\Lucaum-PC\\source\\repos\\WebApiCheckApp\\WebApiCheckApp.Infrastruture.Repository\\WebApiCheckApp.Infrastruture.Repository.csproj",
+      "projectUniqueName": "C:\\Users\\Lucaum-PC\\source\\repos\\WebApiCheckApp\\WebApiCheckApp.Infrastruture.Repository\\WebApiCheckApp.Infrastructure.Repository.csproj",
+      "projectName": "WebApiCheckApp.Infrastructure.Repository",
+      "projectPath": "C:\\Users\\Lucaum-PC\\source\\repos\\WebApiCheckApp\\WebApiCheckApp.Infrastruture.Repository\\WebApiCheckApp.Infrastructure.Repository.csproj",
       "packagesPath": "C:\\Users\\Lucaum-PC\\.nuget\\packages\\",
       "outputPath": "C:\\Users\\Lucaum-PC\\source\\repos\\WebApiCheckApp\\WebApiCheckApp.Infrastruture.Repository\\obj\\",
       "projectStyle": "PackageReference",
@@ -5458,8 +5458,8 @@
       "frameworks": {
         "netcoreapp3.0": {
           "projectReferences": {
-            "C:\\Users\\Lucaum-PC\\source\\repos\\WebApiCheckApp\\WebApiCheckApp.Data\\WebApiCheckApp.Infrastruture.Data.csproj": {
-              "projectPath": "C:\\Users\\Lucaum-PC\\source\\repos\\WebApiCheckApp\\WebApiCheckApp.Data\\WebApiCheckApp.Infrastruture.Data.csproj"
+            "C:\\Users\\Lucaum-PC\\source\\repos\\WebApiCheckApp\\WebApiCheckApp.Data\\WebApiCheckApp.Infrastructure.Data.csproj": {
+              "projectPath": "C:\\Users\\Lucaum-PC\\source\\repos\\WebApiCheckApp\\WebApiCheckApp.Data\\WebApiCheckApp.Infrastructure.Data.csproj"
             },
             "C:\\Users\\Lucaum-PC\\source\\repos\\WebApiCheckApp\\WebApiCheckApp.Domain.Core\\WebApiCheckApp.Domain.Core.csproj": {
               "projectPath": "C:\\Users\\Lucaum-PC\\source\\repos\\WebApiCheckApp\\WebApiCheckApp.Domain.Core\\WebApiCheckApp.Domain.Core.csproj"
@@ -5500,7 +5500,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.100-preview1-014459\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.0.100\\RuntimeIdentifierGraph.json"
       }
     }
   }

@@ -7,6 +7,8 @@ using WebApiCheckApp.Application.Interfaces;
 
 namespace WebApiCheckApp.Controllers
 {
+    [Route("api/[controller]")]
+    [ApiController]
     public class Equipamento_SegurancaController : ControllerBase
     {
         private readonly IApplicationServiceEquipamento_Seguranca _applicationServiceEquipamento_Seguranca;
@@ -39,6 +41,68 @@ namespace WebApiCheckApp.Controllers
             try
             {
                 return Ok(_applicationServiceEquipamento_Seguranca.GetById(id));
+            }
+            catch (Exception)
+            {
+
+                return StatusCode(StatusCodes.Status500InternalServerError, "Banco de dados Falhou - método GETBYID");
+            }
+
+        }
+
+        // GET  api/getAllInfoEmpresaClienteById/id
+        [HttpGet("getEquipamentoById/{id}")]
+        public ActionResult<string> getEquipamentoById(int id)
+        {
+            try
+            {
+                return Ok(_applicationServiceEquipamento_Seguranca.getEquipamentoById(id));
+            }
+            catch (Exception)
+            {
+
+                return StatusCode(StatusCodes.Status500InternalServerError, "Banco de dados Falhou - método GETBYID");
+            }
+        }
+
+        // GET  api/getAllEquipamentoByEmpresaId/id
+        [HttpGet("getAllEquipamentoByEmpresaId/{id}")]
+        public ActionResult<string> getAllEquipamentoByEmpresaId(int id)
+        {
+            try
+            {
+                return Ok(_applicationServiceEquipamento_Seguranca.getAllEquipamentoByEmpresaId(id));
+            }
+            catch (Exception)
+            {
+
+                return StatusCode(StatusCodes.Status500InternalServerError, "Banco de dados Falhou - método GETBYID");
+            }
+        }
+
+        // GET  api/getAllInfoEmpresaClienteById?id=1&tipoId=2
+        [HttpGet("getAllEquipamento")]
+        public ActionResult<IEnumerable<string>> getAllEquipamento()
+        {
+            try
+            {
+                return Ok(_applicationServiceEquipamento_Seguranca.getAllEquipamento());
+            }
+            catch (Exception)
+            {
+
+                return StatusCode(StatusCodes.Status500InternalServerError, "Banco de dados Falhou - método GETBYID");
+            }
+
+        }
+
+        // GET  api/getAllEquipamentoByEmpresaIdAndTipo?id=1&tipoId=2
+        [HttpGet("getAllEquipamentoByEmpresaIdAndTipo")]
+        public ActionResult<string> getAllEquipamentoByEmpresaIdAndTipo([FromQuery] int id, [FromQuery] int tipoId)
+        {
+            try
+            {
+                return Ok(_applicationServiceEquipamento_Seguranca.getAllEquipamentoByEmpresaIdAndTipo(id, tipoId));
             }
             catch (Exception)
             {

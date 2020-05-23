@@ -40,6 +40,13 @@ namespace WebApiCheckApp.Application.Services
             return _mapper.Map<IEnumerable<EmpresaClienteDTO>>(listObjEntity);
         }
 
+        public EmpresaClienteDTO getAllEquipamentoByIdAndTipo(int empresaId, int tipoId)
+        {
+            var listObjentity = _serviceEmpresaCliente.getAllEquipamentoByIdAndTipo(empresaId, tipoId);
+
+            return _mapper.Map<EmpresaClienteDTO>(listObjentity);
+        }
+
         public EmpresaClienteDTO getAllInfoEmpresaClienteById(int id)
         {
             var objEntity = _serviceEmpresaCliente.getAllInfoEmpresaClienteById(id);

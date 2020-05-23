@@ -2754,7 +2754,7 @@
           "bin/placeholder/WebApiCheckApp.Domain.Services.dll": {}
         }
       },
-      "WebApiCheckApp.Infrastruture.CrossCutting.Adapter/1.0.0": {
+      "WebApiCheckApp.Infrastructure.CrossCutting.Adapter/1.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v3.0",
         "dependencies": {
@@ -2763,29 +2763,29 @@
           "webApiCheckApp.Application.DTO": "1.0.0"
         },
         "compile": {
-          "bin/placeholder/WebApiCheckApp.Infrastruture.CrossCutting.Adapter.dll": {}
+          "bin/placeholder/WebApiCheckApp.Infrastructure.CrossCutting.Adapter.dll": {}
         },
         "runtime": {
-          "bin/placeholder/WebApiCheckApp.Infrastruture.CrossCutting.Adapter.dll": {}
+          "bin/placeholder/WebApiCheckApp.Infrastructure.CrossCutting.Adapter.dll": {}
         }
       },
-      "WebApiCheckApp.Infrastruture.CrossCutting.IOC/1.0.0": {
+      "WebApiCheckApp.Infrastructure.CrossCutting.IOC/1.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v3.0",
         "dependencies": {
           "Autofac": "5.1.2",
           "WebApiCheckApp.Application": "1.0.0",
           "WebApiCheckApp.Domain.Services": "1.0.0",
-          "WebApiCheckApp.Infrastruture.Repository": "1.0.0"
+          "WebApiCheckApp.Infrastructure.Repository": "1.0.0"
         },
         "compile": {
-          "bin/placeholder/WebApiCheckApp.Infrastruture.CrossCutting.IOC.dll": {}
+          "bin/placeholder/WebApiCheckApp.Infrastructure.CrossCutting.IOC.dll": {}
         },
         "runtime": {
-          "bin/placeholder/WebApiCheckApp.Infrastruture.CrossCutting.IOC.dll": {}
+          "bin/placeholder/WebApiCheckApp.Infrastructure.CrossCutting.IOC.dll": {}
         }
       },
-      "WebApiCheckApp.Infrastruture.Data/1.0.0": {
+      "WebApiCheckApp.Infrastructure.Data/1.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v3.0",
         "dependencies": {
@@ -2796,26 +2796,26 @@
           "WebApiCheckApp.Domain": "1.0.0"
         },
         "compile": {
-          "bin/placeholder/WebApiCheckApp.Infrastruture.Data.dll": {}
+          "bin/placeholder/WebApiCheckApp.Infrastructure.Data.dll": {}
         },
         "runtime": {
-          "bin/placeholder/WebApiCheckApp.Infrastruture.Data.dll": {}
+          "bin/placeholder/WebApiCheckApp.Infrastructure.Data.dll": {}
         }
       },
-      "WebApiCheckApp.Infrastruture.Repository/1.0.0": {
+      "WebApiCheckApp.Infrastructure.Repository/1.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v3.0",
         "dependencies": {
           "Microsoft.EntityFrameworkCore": "3.1.3",
           "Microsoft.EntityFrameworkCore.SqlServer": "3.1.3",
           "WebApiCheckApp.Domain.Core": "1.0.0",
-          "WebApiCheckApp.Infrastruture.Data": "1.0.0"
+          "WebApiCheckApp.Infrastructure.Data": "1.0.0"
         },
         "compile": {
-          "bin/placeholder/WebApiCheckApp.Infrastruture.Repository.dll": {}
+          "bin/placeholder/WebApiCheckApp.Infrastructure.Repository.dll": {}
         },
         "runtime": {
-          "bin/placeholder/WebApiCheckApp.Infrastruture.Repository.dll": {}
+          "bin/placeholder/WebApiCheckApp.Infrastructure.Repository.dll": {}
         }
       }
     }
@@ -8869,25 +8869,25 @@
       "path": "../WebApiCheckApp.Domain.Services/WebApiCheckApp.Domain.Services.csproj",
       "msbuildProject": "../WebApiCheckApp.Domain.Services/WebApiCheckApp.Domain.Services.csproj"
     },
-    "WebApiCheckApp.Infrastruture.CrossCutting.Adapter/1.0.0": {
+    "WebApiCheckApp.Infrastructure.CrossCutting.Adapter/1.0.0": {
       "type": "project",
-      "path": "../WebApiCheckApp.Infrastruture.CrossCutting.Adapter/WebApiCheckApp.Infrastruture.CrossCutting.Adapter.csproj",
-      "msbuildProject": "../WebApiCheckApp.Infrastruture.CrossCutting.Adapter/WebApiCheckApp.Infrastruture.CrossCutting.Adapter.csproj"
+      "path": "../WebApiCheckApp.Infrastruture.CrossCutting.Adapter/WebApiCheckApp.Infrastructure.CrossCutting.Adapter.csproj",
+      "msbuildProject": "../WebApiCheckApp.Infrastruture.CrossCutting.Adapter/WebApiCheckApp.Infrastructure.CrossCutting.Adapter.csproj"
     },
-    "WebApiCheckApp.Infrastruture.CrossCutting.IOC/1.0.0": {
+    "WebApiCheckApp.Infrastructure.CrossCutting.IOC/1.0.0": {
       "type": "project",
-      "path": "../WebApiCheckApp.Infrastruture.CrossCutting.IOC/WebApiCheckApp.Infrastruture.CrossCutting.IOC.csproj",
-      "msbuildProject": "../WebApiCheckApp.Infrastruture.CrossCutting.IOC/WebApiCheckApp.Infrastruture.CrossCutting.IOC.csproj"
+      "path": "../WebApiCheckApp.Infrastruture.CrossCutting.IOC/WebApiCheckApp.Infrastructure.CrossCutting.IOC.csproj",
+      "msbuildProject": "../WebApiCheckApp.Infrastruture.CrossCutting.IOC/WebApiCheckApp.Infrastructure.CrossCutting.IOC.csproj"
     },
-    "WebApiCheckApp.Infrastruture.Data/1.0.0": {
+    "WebApiCheckApp.Infrastructure.Data/1.0.0": {
       "type": "project",
-      "path": "../WebApiCheckApp.Data/WebApiCheckApp.Infrastruture.Data.csproj",
-      "msbuildProject": "../WebApiCheckApp.Data/WebApiCheckApp.Infrastruture.Data.csproj"
+      "path": "../WebApiCheckApp.Data/WebApiCheckApp.Infrastructure.Data.csproj",
+      "msbuildProject": "../WebApiCheckApp.Data/WebApiCheckApp.Infrastructure.Data.csproj"
     },
-    "WebApiCheckApp.Infrastruture.Repository/1.0.0": {
+    "WebApiCheckApp.Infrastructure.Repository/1.0.0": {
       "type": "project",
-      "path": "../WebApiCheckApp.Infrastruture.Repository/WebApiCheckApp.Infrastruture.Repository.csproj",
-      "msbuildProject": "../WebApiCheckApp.Infrastruture.Repository/WebApiCheckApp.Infrastruture.Repository.csproj"
+      "path": "../WebApiCheckApp.Infrastruture.Repository/WebApiCheckApp.Infrastructure.Repository.csproj",
+      "msbuildProject": "../WebApiCheckApp.Infrastruture.Repository/WebApiCheckApp.Infrastructure.Repository.csproj"
     }
   },
   "projectFileDependencyGroups": {
@@ -8902,9 +8902,9 @@
       "Microsoft.Extensions.Logging.Debug >= 3.0.0",
       "Microsoft.VisualStudio.Web.CodeGeneration.Design >= 3.0.0",
       "System.Diagnostics.Tools >= 4.3.0",
-      "WebApiCheckApp.Infrastruture.CrossCutting.Adapter >= 1.0.0",
-      "WebApiCheckApp.Infrastruture.CrossCutting.IOC >= 1.0.0",
-      "WebApiCheckApp.Infrastruture.Data >= 1.0.0"
+      "WebApiCheckApp.Infrastructure.CrossCutting.Adapter >= 1.0.0",
+      "WebApiCheckApp.Infrastructure.CrossCutting.IOC >= 1.0.0",
+      "WebApiCheckApp.Infrastructure.Data >= 1.0.0"
     ]
   },
   "packageFolders": {
@@ -8941,14 +8941,14 @@
       "frameworks": {
         "netcoreapp3.0": {
           "projectReferences": {
-            "C:\\Users\\Lucaum-PC\\source\\repos\\WebApiCheckApp\\WebApiCheckApp.Data\\WebApiCheckApp.Infrastruture.Data.csproj": {
-              "projectPath": "C:\\Users\\Lucaum-PC\\source\\repos\\WebApiCheckApp\\WebApiCheckApp.Data\\WebApiCheckApp.Infrastruture.Data.csproj"
+            "C:\\Users\\Lucaum-PC\\source\\repos\\WebApiCheckApp\\WebApiCheckApp.Data\\WebApiCheckApp.Infrastructure.Data.csproj": {
+              "projectPath": "C:\\Users\\Lucaum-PC\\source\\repos\\WebApiCheckApp\\WebApiCheckApp.Data\\WebApiCheckApp.Infrastructure.Data.csproj"
             },
-            "C:\\Users\\Lucaum-PC\\source\\repos\\WebApiCheckApp\\WebApiCheckApp.Infrastruture.CrossCutting.Adapter\\WebApiCheckApp.Infrastruture.CrossCutting.Adapter.csproj": {
-              "projectPath": "C:\\Users\\Lucaum-PC\\source\\repos\\WebApiCheckApp\\WebApiCheckApp.Infrastruture.CrossCutting.Adapter\\WebApiCheckApp.Infrastruture.CrossCutting.Adapter.csproj"
+            "C:\\Users\\Lucaum-PC\\source\\repos\\WebApiCheckApp\\WebApiCheckApp.Infrastruture.CrossCutting.Adapter\\WebApiCheckApp.Infrastructure.CrossCutting.Adapter.csproj": {
+              "projectPath": "C:\\Users\\Lucaum-PC\\source\\repos\\WebApiCheckApp\\WebApiCheckApp.Infrastruture.CrossCutting.Adapter\\WebApiCheckApp.Infrastructure.CrossCutting.Adapter.csproj"
             },
-            "C:\\Users\\Lucaum-PC\\source\\repos\\WebApiCheckApp\\WebApiCheckApp.Infrastruture.CrossCutting.IOC\\WebApiCheckApp.Infrastruture.CrossCutting.IOC.csproj": {
-              "projectPath": "C:\\Users\\Lucaum-PC\\source\\repos\\WebApiCheckApp\\WebApiCheckApp.Infrastruture.CrossCutting.IOC\\WebApiCheckApp.Infrastruture.CrossCutting.IOC.csproj"
+            "C:\\Users\\Lucaum-PC\\source\\repos\\WebApiCheckApp\\WebApiCheckApp.Infrastruture.CrossCutting.IOC\\WebApiCheckApp.Infrastructure.CrossCutting.IOC.csproj": {
+              "projectPath": "C:\\Users\\Lucaum-PC\\source\\repos\\WebApiCheckApp\\WebApiCheckApp.Infrastruture.CrossCutting.IOC\\WebApiCheckApp.Infrastructure.CrossCutting.IOC.csproj"
             }
           }
         }
@@ -9023,7 +9023,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.100-preview1-014459\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.0.100\\RuntimeIdentifierGraph.json"
       }
     }
   }

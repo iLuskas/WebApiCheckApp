@@ -62,7 +62,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.100-preview1-014459\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.0.100\\RuntimeIdentifierGraph.json"
         }
       }
     },
@@ -133,16 +133,16 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.100-preview1-014459\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.0.100\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "C:\\Users\\Lucaum-PC\\source\\repos\\WebApiCheckApp\\WebApiCheckApp.Data\\WebApiCheckApp.Infrastruture.Data.csproj": {
+    "C:\\Users\\Lucaum-PC\\source\\repos\\WebApiCheckApp\\WebApiCheckApp.Data\\WebApiCheckApp.Infrastructure.Data.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Lucaum-PC\\source\\repos\\WebApiCheckApp\\WebApiCheckApp.Data\\WebApiCheckApp.Infrastruture.Data.csproj",
-        "projectName": "WebApiCheckApp.Infrastruture.Data",
-        "projectPath": "C:\\Users\\Lucaum-PC\\source\\repos\\WebApiCheckApp\\WebApiCheckApp.Data\\WebApiCheckApp.Infrastruture.Data.csproj",
+        "projectUniqueName": "C:\\Users\\Lucaum-PC\\source\\repos\\WebApiCheckApp\\WebApiCheckApp.Data\\WebApiCheckApp.Infrastructure.Data.csproj",
+        "projectName": "WebApiCheckApp.Infrastructure.Data",
+        "projectPath": "C:\\Users\\Lucaum-PC\\source\\repos\\WebApiCheckApp\\WebApiCheckApp.Data\\WebApiCheckApp.Infrastructure.Data.csproj",
         "packagesPath": "C:\\Users\\Lucaum-PC\\.nuget\\packages\\",
         "outputPath": "C:\\Users\\Lucaum-PC\\source\\repos\\WebApiCheckApp\\WebApiCheckApp.Data\\obj\\",
         "projectStyle": "PackageReference",
@@ -219,7 +219,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.100-preview1-014459\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.0.100\\RuntimeIdentifierGraph.json"
         }
       }
     },
@@ -284,7 +284,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.100-preview1-014459\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.0.100\\RuntimeIdentifierGraph.json"
         }
       }
     },
@@ -346,7 +346,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.100-preview1-014459\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.0.100\\RuntimeIdentifierGraph.json"
         }
       }
     },
@@ -404,16 +404,16 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.100-preview1-014459\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.0.100\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "C:\\Users\\Lucaum-PC\\source\\repos\\WebApiCheckApp\\WebApiCheckApp.Infrastruture.CrossCutting.Adapter\\WebApiCheckApp.Infrastruture.CrossCutting.Adapter.csproj": {
+    "C:\\Users\\Lucaum-PC\\source\\repos\\WebApiCheckApp\\WebApiCheckApp.Infrastruture.CrossCutting.Adapter\\WebApiCheckApp.Infrastructure.CrossCutting.Adapter.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Lucaum-PC\\source\\repos\\WebApiCheckApp\\WebApiCheckApp.Infrastruture.CrossCutting.Adapter\\WebApiCheckApp.Infrastruture.CrossCutting.Adapter.csproj",
-        "projectName": "WebApiCheckApp.Infrastruture.CrossCutting.Adapter",
-        "projectPath": "C:\\Users\\Lucaum-PC\\source\\repos\\WebApiCheckApp\\WebApiCheckApp.Infrastruture.CrossCutting.Adapter\\WebApiCheckApp.Infrastruture.CrossCutting.Adapter.csproj",
+        "projectUniqueName": "C:\\Users\\Lucaum-PC\\source\\repos\\WebApiCheckApp\\WebApiCheckApp.Infrastruture.CrossCutting.Adapter\\WebApiCheckApp.Infrastructure.CrossCutting.Adapter.csproj",
+        "projectName": "WebApiCheckApp.Infrastructure.CrossCutting.Adapter",
+        "projectPath": "C:\\Users\\Lucaum-PC\\source\\repos\\WebApiCheckApp\\WebApiCheckApp.Infrastruture.CrossCutting.Adapter\\WebApiCheckApp.Infrastructure.CrossCutting.Adapter.csproj",
         "packagesPath": "C:\\Users\\Lucaum-PC\\.nuget\\packages\\",
         "outputPath": "C:\\Users\\Lucaum-PC\\source\\repos\\WebApiCheckApp\\WebApiCheckApp.Infrastruture.CrossCutting.Adapter\\obj\\",
         "projectStyle": "PackageReference",
@@ -475,16 +475,16 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.100-preview1-014459\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.0.100\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "C:\\Users\\Lucaum-PC\\source\\repos\\WebApiCheckApp\\WebApiCheckApp.Infrastruture.CrossCutting.IOC\\WebApiCheckApp.Infrastruture.CrossCutting.IOC.csproj": {
+    "C:\\Users\\Lucaum-PC\\source\\repos\\WebApiCheckApp\\WebApiCheckApp.Infrastruture.CrossCutting.IOC\\WebApiCheckApp.Infrastructure.CrossCutting.IOC.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Lucaum-PC\\source\\repos\\WebApiCheckApp\\WebApiCheckApp.Infrastruture.CrossCutting.IOC\\WebApiCheckApp.Infrastruture.CrossCutting.IOC.csproj",
-        "projectName": "WebApiCheckApp.Infrastruture.CrossCutting.IOC",
-        "projectPath": "C:\\Users\\Lucaum-PC\\source\\repos\\WebApiCheckApp\\WebApiCheckApp.Infrastruture.CrossCutting.IOC\\WebApiCheckApp.Infrastruture.CrossCutting.IOC.csproj",
+        "projectUniqueName": "C:\\Users\\Lucaum-PC\\source\\repos\\WebApiCheckApp\\WebApiCheckApp.Infrastruture.CrossCutting.IOC\\WebApiCheckApp.Infrastructure.CrossCutting.IOC.csproj",
+        "projectName": "WebApiCheckApp.Infrastructure.CrossCutting.IOC",
+        "projectPath": "C:\\Users\\Lucaum-PC\\source\\repos\\WebApiCheckApp\\WebApiCheckApp.Infrastruture.CrossCutting.IOC\\WebApiCheckApp.Infrastructure.CrossCutting.IOC.csproj",
         "packagesPath": "C:\\Users\\Lucaum-PC\\.nuget\\packages\\",
         "outputPath": "C:\\Users\\Lucaum-PC\\source\\repos\\WebApiCheckApp\\WebApiCheckApp.Infrastruture.CrossCutting.IOC\\obj\\",
         "projectStyle": "PackageReference",
@@ -514,8 +514,8 @@
               "C:\\Users\\Lucaum-PC\\source\\repos\\WebApiCheckApp\\WebApiCheckApp.Domain.Services\\WebApiCheckApp.Domain.Services.csproj": {
                 "projectPath": "C:\\Users\\Lucaum-PC\\source\\repos\\WebApiCheckApp\\WebApiCheckApp.Domain.Services\\WebApiCheckApp.Domain.Services.csproj"
               },
-              "C:\\Users\\Lucaum-PC\\source\\repos\\WebApiCheckApp\\WebApiCheckApp.Infrastruture.Repository\\WebApiCheckApp.Infrastruture.Repository.csproj": {
-                "projectPath": "C:\\Users\\Lucaum-PC\\source\\repos\\WebApiCheckApp\\WebApiCheckApp.Infrastruture.Repository\\WebApiCheckApp.Infrastruture.Repository.csproj"
+              "C:\\Users\\Lucaum-PC\\source\\repos\\WebApiCheckApp\\WebApiCheckApp.Infrastruture.Repository\\WebApiCheckApp.Infrastructure.Repository.csproj": {
+                "projectPath": "C:\\Users\\Lucaum-PC\\source\\repos\\WebApiCheckApp\\WebApiCheckApp.Infrastruture.Repository\\WebApiCheckApp.Infrastructure.Repository.csproj"
               }
             }
           }
@@ -549,16 +549,16 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.100-preview1-014459\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.0.100\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "C:\\Users\\Lucaum-PC\\source\\repos\\WebApiCheckApp\\WebApiCheckApp.Infrastruture.Repository\\WebApiCheckApp.Infrastruture.Repository.csproj": {
+    "C:\\Users\\Lucaum-PC\\source\\repos\\WebApiCheckApp\\WebApiCheckApp.Infrastruture.Repository\\WebApiCheckApp.Infrastructure.Repository.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Lucaum-PC\\source\\repos\\WebApiCheckApp\\WebApiCheckApp.Infrastruture.Repository\\WebApiCheckApp.Infrastruture.Repository.csproj",
-        "projectName": "WebApiCheckApp.Infrastruture.Repository",
-        "projectPath": "C:\\Users\\Lucaum-PC\\source\\repos\\WebApiCheckApp\\WebApiCheckApp.Infrastruture.Repository\\WebApiCheckApp.Infrastruture.Repository.csproj",
+        "projectUniqueName": "C:\\Users\\Lucaum-PC\\source\\repos\\WebApiCheckApp\\WebApiCheckApp.Infrastruture.Repository\\WebApiCheckApp.Infrastructure.Repository.csproj",
+        "projectName": "WebApiCheckApp.Infrastructure.Repository",
+        "projectPath": "C:\\Users\\Lucaum-PC\\source\\repos\\WebApiCheckApp\\WebApiCheckApp.Infrastruture.Repository\\WebApiCheckApp.Infrastructure.Repository.csproj",
         "packagesPath": "C:\\Users\\Lucaum-PC\\.nuget\\packages\\",
         "outputPath": "C:\\Users\\Lucaum-PC\\source\\repos\\WebApiCheckApp\\WebApiCheckApp.Infrastruture.Repository\\obj\\",
         "projectStyle": "PackageReference",
@@ -582,8 +582,8 @@
         "frameworks": {
           "netcoreapp3.0": {
             "projectReferences": {
-              "C:\\Users\\Lucaum-PC\\source\\repos\\WebApiCheckApp\\WebApiCheckApp.Data\\WebApiCheckApp.Infrastruture.Data.csproj": {
-                "projectPath": "C:\\Users\\Lucaum-PC\\source\\repos\\WebApiCheckApp\\WebApiCheckApp.Data\\WebApiCheckApp.Infrastruture.Data.csproj"
+              "C:\\Users\\Lucaum-PC\\source\\repos\\WebApiCheckApp\\WebApiCheckApp.Data\\WebApiCheckApp.Infrastructure.Data.csproj": {
+                "projectPath": "C:\\Users\\Lucaum-PC\\source\\repos\\WebApiCheckApp\\WebApiCheckApp.Data\\WebApiCheckApp.Infrastructure.Data.csproj"
               },
               "C:\\Users\\Lucaum-PC\\source\\repos\\WebApiCheckApp\\WebApiCheckApp.Domain.Core\\WebApiCheckApp.Domain.Core.csproj": {
                 "projectPath": "C:\\Users\\Lucaum-PC\\source\\repos\\WebApiCheckApp\\WebApiCheckApp.Domain.Core\\WebApiCheckApp.Domain.Core.csproj"
@@ -624,7 +624,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.100-preview1-014459\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.0.100\\RuntimeIdentifierGraph.json"
         }
       }
     },
@@ -657,14 +657,14 @@
         "frameworks": {
           "netcoreapp3.0": {
             "projectReferences": {
-              "C:\\Users\\Lucaum-PC\\source\\repos\\WebApiCheckApp\\WebApiCheckApp.Data\\WebApiCheckApp.Infrastruture.Data.csproj": {
-                "projectPath": "C:\\Users\\Lucaum-PC\\source\\repos\\WebApiCheckApp\\WebApiCheckApp.Data\\WebApiCheckApp.Infrastruture.Data.csproj"
+              "C:\\Users\\Lucaum-PC\\source\\repos\\WebApiCheckApp\\WebApiCheckApp.Data\\WebApiCheckApp.Infrastructure.Data.csproj": {
+                "projectPath": "C:\\Users\\Lucaum-PC\\source\\repos\\WebApiCheckApp\\WebApiCheckApp.Data\\WebApiCheckApp.Infrastructure.Data.csproj"
               },
-              "C:\\Users\\Lucaum-PC\\source\\repos\\WebApiCheckApp\\WebApiCheckApp.Infrastruture.CrossCutting.Adapter\\WebApiCheckApp.Infrastruture.CrossCutting.Adapter.csproj": {
-                "projectPath": "C:\\Users\\Lucaum-PC\\source\\repos\\WebApiCheckApp\\WebApiCheckApp.Infrastruture.CrossCutting.Adapter\\WebApiCheckApp.Infrastruture.CrossCutting.Adapter.csproj"
+              "C:\\Users\\Lucaum-PC\\source\\repos\\WebApiCheckApp\\WebApiCheckApp.Infrastruture.CrossCutting.Adapter\\WebApiCheckApp.Infrastructure.CrossCutting.Adapter.csproj": {
+                "projectPath": "C:\\Users\\Lucaum-PC\\source\\repos\\WebApiCheckApp\\WebApiCheckApp.Infrastruture.CrossCutting.Adapter\\WebApiCheckApp.Infrastructure.CrossCutting.Adapter.csproj"
               },
-              "C:\\Users\\Lucaum-PC\\source\\repos\\WebApiCheckApp\\WebApiCheckApp.Infrastruture.CrossCutting.IOC\\WebApiCheckApp.Infrastruture.CrossCutting.IOC.csproj": {
-                "projectPath": "C:\\Users\\Lucaum-PC\\source\\repos\\WebApiCheckApp\\WebApiCheckApp.Infrastruture.CrossCutting.IOC\\WebApiCheckApp.Infrastruture.CrossCutting.IOC.csproj"
+              "C:\\Users\\Lucaum-PC\\source\\repos\\WebApiCheckApp\\WebApiCheckApp.Infrastruture.CrossCutting.IOC\\WebApiCheckApp.Infrastructure.CrossCutting.IOC.csproj": {
+                "projectPath": "C:\\Users\\Lucaum-PC\\source\\repos\\WebApiCheckApp\\WebApiCheckApp.Infrastruture.CrossCutting.IOC\\WebApiCheckApp.Infrastructure.CrossCutting.IOC.csproj"
               }
             }
           }
@@ -739,7 +739,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.100-preview1-014459\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.0.100\\RuntimeIdentifierGraph.json"
         }
       }
     }

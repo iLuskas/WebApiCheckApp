@@ -21,9 +21,9 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\WebApiCheckApp.Data\WebApiCheckApp.Infrastruture.Data.csproj" />
-    <ProjectReference Include="..\WebApiCheckApp.Infrastruture.CrossCutting.Adapter\WebApiCheckApp.Infrastruture.CrossCutting.Adapter.csproj" />
-    <ProjectReference Include="..\WebApiCheckApp.Infrastruture.CrossCutting.IOC\WebApiCheckApp.Infrastruture.CrossCutting.IOC.csproj" />
+    <ProjectReference Include="..\WebApiCheckApp.Data\WebApiCheckApp.Infrastructure.Data.csproj" />
+    <ProjectReference Include="..\WebApiCheckApp.Infrastruture.CrossCutting.Adapter\WebApiCheckApp.Infrastructure.CrossCutting.Adapter.csproj" />
+    <ProjectReference Include="..\WebApiCheckApp.Infrastruture.CrossCutting.IOC\WebApiCheckApp.Infrastructure.CrossCutting.IOC.csproj" />
   </ItemGroup>
 
 </Project>

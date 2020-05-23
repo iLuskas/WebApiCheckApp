@@ -84,6 +84,22 @@ namespace WebApiCheckApp.Controllers
 
         }
 
+        // GET  api/getAllEquipamentoByIdAndTipo?id=1&tipoId=2
+        [HttpGet("getAllEquipamentoByIdAndTipo")]
+        public ActionResult<string> getAllEquipamentoByIdAndTipo([FromQuery] int id, [FromQuery] int tipoId)
+        {
+            try
+            {
+                return Ok(_applicationServiceEmpresaCliente.getAllEquipamentoByIdAndTipo(id, tipoId));
+            }
+            catch (Exception)
+            {
+
+                return StatusCode(StatusCodes.Status500InternalServerError, "Banco de dados Falhou - método GETBYID");
+            }
+
+        }
+
         // POST api/values
         [HttpPost]
         public ActionResult Post([FromBody] EmpresaClienteDTO empresaClienteDTO)

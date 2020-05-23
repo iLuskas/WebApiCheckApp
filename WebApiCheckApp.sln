@@ -17,7 +17,7 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WebApiCheckApp.Domain", "We
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "4.1 Data", "4.1 Data", "{8FCE95EE-A663-4F8B-978C-D4616A1D9571}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WebApiCheckApp.Infrastruture.Data", "WebApiCheckApp.Data\WebApiCheckApp.Infrastruture.Data.csproj", "{F088E584-AFDF-4136-9B64-48DF862A33F4}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WebApiCheckApp.Infrastructure.Data", "WebApiCheckApp.Data\WebApiCheckApp.Infrastructure.Data.csproj", "{F088E584-AFDF-4136-9B64-48DF862A33F4}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WebApiCheckApp.Domain.Core", "WebApiCheckApp.Domain.Core\WebApiCheckApp.Domain.Core.csproj", "{473DE7E4-5A45-4501-9858-494C35B01945}"
 EndProject
@@ -27,13 +27,13 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WebApiCheckApp.Application"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "webApiCheckApp.Application.DTO", "webApiCheckApp.Application.DTO\webApiCheckApp.Application.DTO.csproj", "{4C1457E9-A4BC-404F-94C1-AF733B103F11}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WebApiCheckApp.Infrastruture.Repository", "WebApiCheckApp.Infrastruture.Repository\WebApiCheckApp.Infrastruture.Repository.csproj", "{A2B17DD0-8A8B-49AE-B0A8-9A6D73D07A07}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WebApiCheckApp.Infrastructure.Repository", "WebApiCheckApp.Infrastruture.Repository\WebApiCheckApp.Infrastructure.Repository.csproj", "{A2B17DD0-8A8B-49AE-B0A8-9A6D73D07A07}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "4.2 CrossCutting", "4.2 CrossCutting", "{1B2DBED9-F488-4F99-BCBF-05D5A0353135}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WebApiCheckApp.Infrastruture.CrossCutting.Adapter", "WebApiCheckApp.Infrastruture.CrossCutting.Adapter\WebApiCheckApp.Infrastruture.CrossCutting.Adapter.csproj", "{76C3F30C-29B9-47E4-B43B-9F1CEF95E299}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WebApiCheckApp.Infrastructure.CrossCutting.Adapter", "WebApiCheckApp.Infrastruture.CrossCutting.Adapter\WebApiCheckApp.Infrastructure.CrossCutting.Adapter.csproj", "{76C3F30C-29B9-47E4-B43B-9F1CEF95E299}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WebApiCheckApp.Infrastruture.CrossCutting.IOC", "WebApiCheckApp.Infrastruture.CrossCutting.IOC\WebApiCheckApp.Infrastruture.CrossCutting.IOC.csproj", "{7CDB496A-E8E1-4B82-8BC0-6C37477B6294}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WebApiCheckApp.Infrastructure.CrossCutting.IOC", "WebApiCheckApp.Infrastruture.CrossCutting.IOC\WebApiCheckApp.Infrastructure.CrossCutting.IOC.csproj", "{7CDB496A-E8E1-4B82-8BC0-6C37477B6294}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

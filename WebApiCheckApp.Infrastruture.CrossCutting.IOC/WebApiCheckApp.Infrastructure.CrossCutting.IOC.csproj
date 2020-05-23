@@ -11,7 +11,7 @@
   <ItemGroup>
     <ProjectReference Include="..\WebApiCheckApp.Application\WebApiCheckApp.Application.csproj" />
     <ProjectReference Include="..\WebApiCheckApp.Domain.Services\WebApiCheckApp.Domain.Services.csproj" />
-    <ProjectReference Include="..\WebApiCheckApp.Infrastruture.Repository\WebApiCheckApp.Infrastruture.Repository.csproj" />
+    <ProjectReference Include="..\WebApiCheckApp.Infrastruture.Repository\WebApiCheckApp.Infrastructure.Repository.csproj" />
   </ItemGroup>
 
 </Project>

@@ -34,9 +34,9 @@
           "Microsoft.Extensions.Logging.Debug": "3.0.0",
           "Microsoft.VisualStudio.Web.CodeGeneration.Design": "3.0.0",
           "System.Diagnostics.Tools": "4.3.0",
-          "WebApiCheckApp.Infrastruture.CrossCutting.Adapter": "1.0.0",
-          "WebApiCheckApp.Infrastruture.CrossCutting.IOC": "1.0.0",
-          "WebApiCheckApp.Infrastruture.Data": "1.0.0",
+          "WebApiCheckApp.Infrastructure.CrossCutting.Adapter": "1.0.0",
+          "WebApiCheckApp.Infrastructure.CrossCutting.IOC": "1.0.0",
+          "WebApiCheckApp.Infrastructure.Data": "1.0.0",
           "Microsoft.AspNetCore.Antiforgery": "3.0.0.0",
           "Microsoft.AspNetCore.Authentication.Abstractions": "3.0.0.0",
           "Microsoft.AspNetCore.Authentication.Cookies": "3.0.0.0",
@@ -2475,34 +2475,34 @@
           "WebApiCheckApp.Domain.Services.dll": {}
         }
       },
-      "WebApiCheckApp.Infrastruture.CrossCutting.Adapter/1.0.0": {
+      "WebApiCheckApp.Infrastructure.CrossCutting.Adapter/1.0.0": {
         "dependencies": {
           "AutoMapper": "9.0.0",
           "WebApiCheckApp.Domain": "1.0.0",
           "webApiCheckApp.Application.DTO": "1.0.0"
         },
         "runtime": {
-          "WebApiCheckApp.Infrastruture.CrossCutting.Adapter.dll": {}
+          "WebApiCheckApp.Infrastructure.CrossCutting.Adapter.dll": {}
         },
         "compile": {
-          "WebApiCheckApp.Infrastruture.CrossCutting.Adapter.dll": {}
+          "WebApiCheckApp.Infrastructure.CrossCutting.Adapter.dll": {}
         }
       },
-      "WebApiCheckApp.Infrastruture.CrossCutting.IOC/1.0.0": {
+      "WebApiCheckApp.Infrastructure.CrossCutting.IOC/1.0.0": {
         "dependencies": {
           "Autofac": "5.1.2",
           "WebApiCheckApp.Application": "1.0.0",
           "WebApiCheckApp.Domain.Services": "1.0.0",
-          "WebApiCheckApp.Infrastruture.Repository": "1.0.0"
+          "WebApiCheckApp.Infrastructure.Repository": "1.0.0"
         },
         "runtime": {
-          "WebApiCheckApp.Infrastruture.CrossCutting.IOC.dll": {}
+          "WebApiCheckApp.Infrastructure.CrossCutting.IOC.dll": {}
         },
         "compile": {
-          "WebApiCheckApp.Infrastruture.CrossCutting.IOC.dll": {}
+          "WebApiCheckApp.Infrastructure.CrossCutting.IOC.dll": {}
         }
       },
-      "WebApiCheckApp.Infrastruture.Data/1.0.0": {
+      "WebApiCheckApp.Infrastructure.Data/1.0.0": {
         "dependencies": {
           "EntityFramework": "6.4.0",
           "Microsoft.EntityFrameworkCore": "3.1.3",
@@ -2511,24 +2511,24 @@
           "WebApiCheckApp.Domain": "1.0.0"
         },
         "runtime": {
-          "WebApiCheckApp.Infrastruture.Data.dll": {}
+          "WebApiCheckApp.Infrastructure.Data.dll": {}
         },
         "compile": {
-          "WebApiCheckApp.Infrastruture.Data.dll": {}
+          "WebApiCheckApp.Infrastructure.Data.dll": {}
         }
       },
-      "WebApiCheckApp.Infrastruture.Repository/1.0.0": {
+      "WebApiCheckApp.Infrastructure.Repository/1.0.0": {
         "dependencies": {
           "Microsoft.EntityFrameworkCore": "3.1.3",
           "Microsoft.EntityFrameworkCore.SqlServer": "3.1.3",
           "WebApiCheckApp.Domain.Core": "1.0.0",
-          "WebApiCheckApp.Infrastruture.Data": "1.0.0"
+          "WebApiCheckApp.Infrastructure.Data": "1.0.0"
         },
         "runtime": {
-          "WebApiCheckApp.Infrastruture.Repository.dll": {}
+          "WebApiCheckApp.Infrastructure.Repository.dll": {}
         },
         "compile": {
-          "WebApiCheckApp.Infrastruture.Repository.dll": {}
+          "WebApiCheckApp.Infrastructure.Repository.dll": {}
         }
       },
       "Microsoft.AspNetCore.Antiforgery/3.0.0.0": {
@@ -5284,22 +5284,22 @@
       "serviceable": false,
       "sha512": ""
     },
-    "WebApiCheckApp.Infrastruture.CrossCutting.Adapter/1.0.0": {
+    "WebApiCheckApp.Infrastructure.CrossCutting.Adapter/1.0.0": {
       "type": "project",
       "serviceable": false,
       "sha512": ""
     },
-    "WebApiCheckApp.Infrastruture.CrossCutting.IOC/1.0.0": {
+    "WebApiCheckApp.Infrastructure.CrossCutting.IOC/1.0.0": {
       "type": "project",
       "serviceable": false,
       "sha512": ""
     },
-    "WebApiCheckApp.Infrastruture.Data/1.0.0": {
+    "WebApiCheckApp.Infrastructure.Data/1.0.0": {
       "type": "project",
       "serviceable": false,
       "sha512": ""
     },
-    "WebApiCheckApp.Infrastruture.Repository/1.0.0": {
+    "WebApiCheckApp.Infrastructure.Repository/1.0.0": {
       "type": "project",
       "serviceable": false,
       "sha512": ""

@@ -836,9 +836,9 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Lucaum-PC\\source\\repos\\WebApiCheckApp\\WebApiCheckApp.Infrastruture.CrossCutting.Adapter\\WebApiCheckApp.Infrastruture.CrossCutting.Adapter.csproj",
-      "projectName": "WebApiCheckApp.Infrastruture.CrossCutting.Adapter",
-      "projectPath": "C:\\Users\\Lucaum-PC\\source\\repos\\WebApiCheckApp\\WebApiCheckApp.Infrastruture.CrossCutting.Adapter\\WebApiCheckApp.Infrastruture.CrossCutting.Adapter.csproj",
+      "projectUniqueName": "C:\\Users\\Lucaum-PC\\source\\repos\\WebApiCheckApp\\WebApiCheckApp.Infrastruture.CrossCutting.Adapter\\WebApiCheckApp.Infrastructure.CrossCutting.Adapter.csproj",
+      "projectName": "WebApiCheckApp.Infrastructure.CrossCutting.Adapter",
+      "projectPath": "C:\\Users\\Lucaum-PC\\source\\repos\\WebApiCheckApp\\WebApiCheckApp.Infrastruture.CrossCutting.Adapter\\WebApiCheckApp.Infrastructure.CrossCutting.Adapter.csproj",
       "packagesPath": "C:\\Users\\Lucaum-PC\\.nuget\\packages\\",
       "outputPath": "C:\\Users\\Lucaum-PC\\source\\repos\\WebApiCheckApp\\WebApiCheckApp.Infrastruture.CrossCutting.Adapter\\obj\\",
       "projectStyle": "PackageReference",
@@ -900,7 +900,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.100-preview1-014459\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.0.100\\RuntimeIdentifierGraph.json"
       }
     }
   }

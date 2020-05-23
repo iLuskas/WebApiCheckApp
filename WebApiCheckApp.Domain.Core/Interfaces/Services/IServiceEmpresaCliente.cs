@@ -10,5 +10,6 @@ namespace WebApiCheckApp.Domain.Core.Interfaces.Services
     {
         IEnumerable<EmpresaCliente> getAllInfoEmpresaCliente();
         EmpresaCliente getAllInfoEmpresaClienteById(int id);
+        EmpresaCliente getAllEquipamentoByIdAndTipo(int empresaId, int tipoId);
     }
 }

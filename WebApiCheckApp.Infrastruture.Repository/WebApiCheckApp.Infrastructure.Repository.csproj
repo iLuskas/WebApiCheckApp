@@ -10,7 +10,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\WebApiCheckApp.Data\WebApiCheckApp.Infrastruture.Data.csproj" />
+    <ProjectReference Include="..\WebApiCheckApp.Data\WebApiCheckApp.Infrastructure.Data.csproj" />
     <ProjectReference Include="..\WebApiCheckApp.Domain.Core\WebApiCheckApp.Domain.Core.csproj" />
   </ItemGroup>
 
