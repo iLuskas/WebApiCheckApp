@@ -33,7 +33,7 @@ namespace WebApiCheckApp
         public void ConfigureServices(IServiceCollection services)
         {
              services.AddDbContext<CheckappContext>(options => 
-                 options.UseSqlServer(Configuration.GetConnectionString("TesteConnection")));
+                 options.UseSqlServer(Configuration.GetConnectionString("DefaultConnection")));
 
 /*            services.AddDbContext<CheckappContext_HMG>(options =>
                 options.UseSqlServer(Configuration.GetConnectionString("TesteConnection")));*/

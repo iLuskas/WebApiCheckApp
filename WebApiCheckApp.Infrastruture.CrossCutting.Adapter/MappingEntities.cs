@@ -29,7 +29,8 @@ namespace WebApiCheckApp.Infrastruture.CrossCutting.Adapter
                 .ForMember(dest => dest.enderecoDTOs, opt => opt.MapFrom(src => src.Enderecos))
                 .ForMember(dest => dest.telefoneDTOs, opt => opt.MapFrom(src => src.Telefones)).ReverseMap();
 
-            CreateMap<Equipamento_Seguranca, Equipamento_SegurancaDTO>().ReverseMap();
+            CreateMap<Equipamento_Seguranca, Equipamento_SegurancaDTO>()
+            .ForMember(dest => dest.ExtintorDTO, opt => opt.MapFrom(src => src.Extintor)).ReverseMap();
             CreateMap<Tipo_equipamento, Tipo_EquipamentoDTO>().ReverseMap();
             CreateMap<Extintor, ExtintorDTO>().ReverseMap();
         }

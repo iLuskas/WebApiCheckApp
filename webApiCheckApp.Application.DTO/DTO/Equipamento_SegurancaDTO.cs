@@ -10,6 +10,6 @@ namespace webApiCheckApp.Application.DTO.DTO
         public string QrCode { get; set; }
         public DateTime? Qrcode_data_geracao { get; set; }
         public DateTime DataCriacao_equipamento { get; set; }
-        public ExtintorDTO Extintor { get; set; }
+        public ExtintorDTO ExtintorDTO { get; set; }
     }
 }

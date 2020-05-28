@@ -112,7 +112,7 @@ namespace WebApiCheckApp.Infrastruture.Data.Migrations
                     b.Property<string>("QrCode")
                         .HasColumnType("nvarchar(max)");
 
-                    b.Property<DateTime>("Qrcode_data_geracao")
+                    b.Property<DateTime?>("Qrcode_data_geracao")
                         .HasColumnType("datetime2");
 
                     b.Property<int>("Tipo_equipamentoId")
@@ -134,8 +134,9 @@ namespace WebApiCheckApp.Infrastruture.Data.Migrations
                         .HasColumnType("int")
                         .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
 
-                    b.Property<DateTime>("Ano_fabricacao")
-                        .HasColumnType("datetime2");
+                    b.Property<string>("AnoFabricacao_ext")
+                        .HasColumnType("nvarchar(4)")
+                        .HasMaxLength(4);
 
                     b.Property<double>("Capacidade_ext")
                         .HasColumnType("float");
@@ -144,19 +145,19 @@ namespace WebApiCheckApp.Infrastruture.Data.Migrations
                         .HasColumnType("int");
 
                     b.Property<string>("Fabricante_ext")
-                        .HasColumnType("nvarchar(max)");
+                        .HasColumnType("nvarchar(50)")
+                        .HasMaxLength(50);
 
                     b.Property<int>("Num_ext")
                         .HasColumnType("int");
 
-                    b.Property<double>("Peso_ext")
-                        .HasColumnType("float");
-
                     b.Property<string>("SeloInmetro_ext")
-                        .HasColumnType("nvarchar(max)");
+                        .HasColumnType("nvarchar(14)")
+                        .HasMaxLength(14);
 
                     b.Property<string>("Tipo_ext")
-                        .HasColumnType("nvarchar(max)");
+                        .HasColumnType("nvarchar(100)")
+                        .HasMaxLength(100);
 
                     b.HasKey("Id");
 
