@@ -65,6 +65,21 @@ namespace WebApiCheckApp.Controllers
             }
         }
 
+        // GET  api/getEquipByNumExtintor/id
+        [HttpGet("getEquipByNumExtintor")]
+        public ActionResult<string> getEquipByNumExtintor([FromQuery] string numExtintor, [FromQuery] int empId)
+        {
+            try
+            {
+                return Ok(_applicationServiceEquipamento_Seguranca.getEquipByNumExtintor(numExtintor, empId));
+            }
+            catch (Exception ex)
+            {
+
+                return StatusCode(StatusCodes.Status500InternalServerError, "Banco de dados Falhou - método GETEQUIPBYNUMEXTINTOR" + ex.Message);
+            }
+        }
+
         // GET  api/getAllEquipamentoByEmpresaId/id
         [HttpGet("getAllEquipamentoByEmpresaId/{id}")]
         public ActionResult<string> getAllEquipamentoByEmpresaId(int id)
@@ -80,7 +95,7 @@ namespace WebApiCheckApp.Controllers
             }
         }
 
-        // GET  api/getAllInfoEmpresaClienteById?id=1&tipoId=2
+        // GET  api/getAllEquipamento
         [HttpGet("getAllEquipamento")]
         public ActionResult<IEnumerable<string>> getAllEquipamento()
         {
@@ -91,7 +106,56 @@ namespace WebApiCheckApp.Controllers
             catch (Exception)
             {
 
-                return StatusCode(StatusCodes.Status500InternalServerError, "Banco de dados Falhou - método GETBYID");
+                return StatusCode(StatusCodes.Status500InternalServerError, "Banco de dados Falhou - método GETALLEQUIPAMENTO");
+            }
+
+        }
+
+
+        // GET  api/getRelatEquipamentos?id=1&tipoId=2
+        [HttpGet("getRelatEquipamentos")]
+        public ActionResult<IEnumerable<string>> getRelatEquipamentos([FromQuery] DateTime dataIni, DateTime dataFim)
+        {
+            try
+            {
+                return Ok(_applicationServiceEquipamento_Seguranca.getRelatEquipamentos(dataIni, dataFim));
+            }
+            catch (Exception ex)
+            {
+
+                return StatusCode(StatusCodes.Status500InternalServerError, "Banco de dados Falhou - método GETRELATEQUIPAMENTOS" + ex.Message);
+            }
+
+        }
+
+        // GET  api/getRelatEquipamentos?id=1&tipoId=2
+        [HttpGet("getRelatEquipNotInsp")]
+        public ActionResult<IEnumerable<string>> getRelatEquipNotInsp([FromQuery] DateTime dataIni, DateTime dataFim)
+        {
+            try
+            {
+                return Ok(_applicationServiceEquipamento_Seguranca.getRelatEquipNotInsp());
+            }
+            catch (Exception ex)
+            {
+
+                return StatusCode(StatusCodes.Status500InternalServerError, "Banco de dados Falhou - método GETRELATEQUIPNOTINSP" + ex.Message);
+            }
+
+        }
+
+        // GET  api/getRelatEquipInsp
+        [HttpGet("getRelatEquipInsp")]
+        public ActionResult<IEnumerable<string>> getRelatEquipInsp([FromQuery] DateTime dataIni, DateTime dataFim)
+        {
+            try
+            {
+                return Ok(_applicationServiceEquipamento_Seguranca.getRelatEquipInsp());
+            }
+            catch (Exception ex)
+            {
+
+                return StatusCode(StatusCodes.Status500InternalServerError, "Banco de dados Falhou - método GETRELATEQUIPINSP" + ex.Message);
             }
 
         }

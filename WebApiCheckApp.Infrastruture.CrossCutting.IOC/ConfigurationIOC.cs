@@ -7,6 +7,7 @@ using WebApiCheckApp.Application.Services;
 using WebApiCheckApp.Domain.Core.Interfaces.Repositorys;
 using WebApiCheckApp.Domain.Core.Interfaces.Services;
 using WebApiCheckApp.Domain.Services.Services;
+using WebApiCheckApp.Infrastructure.Repository.Repositorys;
 using WebApiCheckApp.Infrastruture.Repository.Repositorys;
 
 namespace WebApiCheckApp.Infrastruture.CrossCutting.IOC
@@ -27,6 +28,11 @@ namespace WebApiCheckApp.Infrastruture.CrossCutting.IOC
             builder.RegisterType<ApplicationServiceTipo_Equipamento>().As<IApplicationServiceTipo_Equipamento>();
             builder.RegisterType<ApplicationServiceExtintor>().As<IApplicationServiceExtintor>();
             builder.RegisterType<ApplicationServiceEquipamento_Seguranca>().As<IApplicationServiceEquipamento_Seguranca>();
+            builder.RegisterType<ApplicationServiceAgendaInspManut>().As<IApplicationServiceAgendaInspManut>();
+            builder.RegisterType<ApplicationServiceStatusInspManut>().As<IApplicationServiceStatusInspManut>();
+            builder.RegisterType<ApplicationServiceTipoAgenda>().As<IApplicationServiceTipoAgenda>();
+            builder.RegisterType<ApplicationServiceInspecao>().As<IApplicationServiceInspecao>();
+            builder.RegisterType<ApplicationServiceManutencao>().As<IApplicationServiceManutencao>();
             #endregion
 
             #region IOC Services
@@ -39,6 +45,12 @@ namespace WebApiCheckApp.Infrastruture.CrossCutting.IOC
             builder.RegisterType<ServiceTipo_Equipamento>().As<IServiceTipo_Equipamento>();
             builder.RegisterType<ServiceEquipamento_Seguranca>().As<IServiceEquipamento_Seguranca>();
             builder.RegisterType<ServiceExtintor>().As<IServiceExtintor>();
+            builder.RegisterType<ServiceEmailSender>().As<IEmailSender>();
+            builder.RegisterType<ServiceAgendaInspManut>().As<IServiceAgendaInspManut>();
+            builder.RegisterType<ServiceStatusInspManut>().As<IServiceStatusInspManut>();
+            builder.RegisterType<ServiceTipoAgenda>().As<IServiceTipoAgenda>();
+            builder.RegisterType<ServiceInspecao>().As<IServiceInspecao>();
+            builder.RegisterType<ServiceManutencao>().As<IServiceManutencao>();
             #endregion
 
             #region IOC Repositorys SQL
@@ -51,6 +63,11 @@ namespace WebApiCheckApp.Infrastruture.CrossCutting.IOC
             builder.RegisterType<RepositoryTipo_equipamento>().As<IRepositoryTipo_Equipamento>();
             builder.RegisterType<RepositoryEquipamento_Seguranca>().As<IRepositoryEquipamento_Seguranca>();
             builder.RegisterType<RepositoryExtintor>().As<IRepositoryExtintor>();
+            builder.RegisterType<RepositoryAgendaInspManut>().As<IRepositoryAgendaInspManut>();
+            builder.RegisterType<RepositoryStatusInspManut>().As<IRepositoryStatusInspManut>();
+            builder.RegisterType<RepositoryTipoAgenda>().As<IRepositoryTipoAgenda>();
+            builder.RegisterType<RepositoryInspecao>().As<IRepositoryInspecao>();
+            builder.RegisterType<RepositoryManutencao>().As<IRepositoryManutencao>();
             #endregion
 
             #endregion

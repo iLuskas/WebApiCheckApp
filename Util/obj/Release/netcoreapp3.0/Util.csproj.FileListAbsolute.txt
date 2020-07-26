@@ -1,0 +1,7 @@
+C:\Users\Lucaum-PC\source\repos\WebApiCheckApp\Util\bin\Release\netcoreapp3.0\Util.deps.json
+C:\Users\Lucaum-PC\source\repos\WebApiCheckApp\Util\bin\Release\netcoreapp3.0\Util.dll
+C:\Users\Lucaum-PC\source\repos\WebApiCheckApp\Util\bin\Release\netcoreapp3.0\Util.pdb
+C:\Users\Lucaum-PC\source\repos\WebApiCheckApp\Util\obj\Release\netcoreapp3.0\Util.AssemblyInfoInputs.cache
+C:\Users\Lucaum-PC\source\repos\WebApiCheckApp\Util\obj\Release\netcoreapp3.0\Util.AssemblyInfo.cs
+C:\Users\Lucaum-PC\source\repos\WebApiCheckApp\Util\obj\Release\netcoreapp3.0\Util.dll
+C:\Users\Lucaum-PC\source\repos\WebApiCheckApp\Util\obj\Release\netcoreapp3.0\Util.pdb

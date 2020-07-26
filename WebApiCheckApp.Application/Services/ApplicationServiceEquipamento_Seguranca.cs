@@ -1,4 +1,5 @@
 using AutoMapper;
+using System;
 using System.Collections.Generic;
 using webApiCheckApp.Application.DTO.DTO;
 using WebApiCheckApp.Application.Interfaces;
@@ -84,6 +85,26 @@ namespace WebApiCheckApp.Application.Services
             var objEntity = _mapper.Map<Equipamento_Seguranca>(obj);
 
             _serviceEquipamento_Seguranca.Update(objEntity);
+        }
+
+        public dynamic getEquipByNumExtintor(string numExtintor, int empId)
+        {
+            return _serviceEquipamento_Seguranca.getEquipByNumExtintor(numExtintor, empId);
+        }
+
+        public IEnumerable<dynamic> getRelatEquipamentos(DateTime dataIni, DateTime dataFim)
+        {
+            return _serviceEquipamento_Seguranca.getRelatEquipamentos(dataIni, dataFim);
+        }
+
+        public IEnumerable<dynamic> getRelatEquipNotInsp()
+        {
+            return _serviceEquipamento_Seguranca.getRelatEquipNotInsp();
+        }
+
+        public IEnumerable<dynamic> getRelatEquipInsp()
+        {
+            return _serviceEquipamento_Seguranca.getRelatEquipInsp();
         }
     }
 }

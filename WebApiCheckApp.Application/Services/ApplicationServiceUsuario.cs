@@ -3,9 +3,11 @@ using System;
 using System.Collections.Generic;
 using System.Text;
 using webApiCheckApp.Application.DTO.DTO;
+using webApiCheckApp.Application.DTO.DTO.DTOHelpers;
 using WebApiCheckApp.Application.Interfaces;
 using WebApiCheckApp.Domain.Core.Interfaces.Services;
 using WebApiCheckApp.Domain.Models;
+using WebApiCheckApp.Domain.Models.Helpers;
 
 namespace WebApiCheckApp.Application.Services
 {
@@ -27,14 +29,27 @@ namespace WebApiCheckApp.Application.Services
             _serviceUsuario.Add(objEntity);
         }
 
+        public void AlterarSenhaUsuario(ModeloAlterarSenhaUserDTO modeloAlterarSenhaUserDTO)
+        {
+            if (string.IsNullOrEmpty(modeloAlterarSenhaUserDTO.Email))
+                throw new Exception("O campo e-mail é obrigatorio");
+
+            if (string.IsNullOrEmpty(modeloAlterarSenhaUserDTO.Senha))
+                throw new Exception("O campo senha é obrigatorio");
+
+            var objEntity = _mapper.Map<ModeloAlterarSenhaUser>(modeloAlterarSenhaUserDTO);
+
+            _serviceUsuario.AlterarSenhaUsuario(objEntity);
+        }
+
         public void Dispose()
         {
             _serviceUsuario.Dispose();
         }
 
-        public IEnumerable<UsuarioDTO> GetAll()
+        public IEnumerable<UsuarioDTO> GetAllUsuario()
         {
-            var listObjEntity =  _serviceUsuario.GetAll();
+            var listObjEntity =  _serviceUsuario.GetAllUsuario();
 
             return _mapper.Map<IEnumerable<UsuarioDTO>>(listObjEntity);
         }
@@ -59,6 +74,11 @@ namespace WebApiCheckApp.Application.Services
             var objEntity = _mapper.Map<Usuario>(usuarioDTO);
 
             _serviceUsuario.Remove(objEntity);
+        }
+
+        public bool ResetSenhaUsuario(string email)
+        {
+            return _serviceUsuario.resetSenhaUsuario(email);
         }
 
         public void Update(UsuarioDTO usuarioDTO)

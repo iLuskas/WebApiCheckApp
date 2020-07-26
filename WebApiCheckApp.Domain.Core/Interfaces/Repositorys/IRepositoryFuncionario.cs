@@ -9,5 +9,7 @@ namespace WebApiCheckApp.Domain.Core.Interfaces.Repositorys
     {
         IEnumerable<Funcionario> getAllInfoFuncionario();
         Funcionario getAllInfoFuncionarioById(int id);
+        int getFuncionarioByUsername(string userName);
+        Funcionario getFuncionarioByName(string name);
     }
 }

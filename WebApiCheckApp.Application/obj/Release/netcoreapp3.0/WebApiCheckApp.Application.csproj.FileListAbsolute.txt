@@ -8,6 +8,7 @@ C:\Users\Lucaum-PC\source\repos\WebApiCheckApp\WebApiCheckApp.Application\bin\Re
 C:\Users\Lucaum-PC\source\repos\WebApiCheckApp\WebApiCheckApp.Application\bin\Release\netcoreapp3.0\WebApiCheckApp.Domain.Core.pdb
 C:\Users\Lucaum-PC\source\repos\WebApiCheckApp\WebApiCheckApp.Application\bin\Release\netcoreapp3.0\WebApiCheckApp.Domain.pdb
 C:\Users\Lucaum-PC\source\repos\WebApiCheckApp\WebApiCheckApp.Application\obj\Release\netcoreapp3.0\WebApiCheckApp.Application.csprojAssemblyReference.cache
+C:\Users\Lucaum-PC\source\repos\WebApiCheckApp\WebApiCheckApp.Application\obj\Release\netcoreapp3.0\WebApiCheckApp.Application.csproj.ResolveComReference.cache
 C:\Users\Lucaum-PC\source\repos\WebApiCheckApp\WebApiCheckApp.Application\obj\Release\netcoreapp3.0\WebApiCheckApp.Application.AssemblyInfoInputs.cache
 C:\Users\Lucaum-PC\source\repos\WebApiCheckApp\WebApiCheckApp.Application\obj\Release\netcoreapp3.0\WebApiCheckApp.Application.AssemblyInfo.cs
 C:\Users\Lucaum-PC\source\repos\WebApiCheckApp\WebApiCheckApp.Application\obj\Release\netcoreapp3.0\WebApiCheckApp.Application.csproj.CopyComplete

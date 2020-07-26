@@ -34,5 +34,23 @@ namespace WebApiCheckApp.Infrastruture.Repository.Repositorys
             return query.AsNoTracking()
             .Where(e => e.Id == id).FirstOrDefault();
         }
+
+        public int getFuncionarioByUsername(string userName)
+        {
+            IQueryable<Funcionario> query = _checkAppContext.Funcionarios
+               .Include(u => u.Usuario);
+
+            return query.AsNoTracking()
+            .Where(e => e.Usuario.Login.ToLower() == userName.ToLower()).FirstOrDefault().Id;
+        }
+
+        public Funcionario getFuncionarioByName(string name)
+        {
+            IQueryable<Funcionario> query = _checkAppContext.Funcionarios
+               .Include(u => u.Usuario);
+
+            return query.AsNoTracking()
+            .Where(e => e.Nome.ToLower() == name.ToLower()).FirstOrDefault();
+        }
     }
 }

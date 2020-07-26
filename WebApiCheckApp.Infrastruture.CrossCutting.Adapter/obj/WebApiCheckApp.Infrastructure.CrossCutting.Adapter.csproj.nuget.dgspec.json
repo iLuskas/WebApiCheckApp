@@ -1,79 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "c:\\Users\\Lucaum-PC\\source\\repos\\WebApiCheckApp\\WebApiCheckApp.Infrastruture.CrossCutting.Adapter\\WebApiCheckApp.Infrastructure.CrossCutting.Adapter.csproj": {}
+    "C:\\Users\\Lucaum-PC\\source\\repos\\WebApiCheckApp\\WebApiCheckApp.Infrastruture.CrossCutting.Adapter\\WebApiCheckApp.Infrastructure.CrossCutting.Adapter.csproj": {}
   },
   "projects": {
-    "c:\\Users\\Lucaum-PC\\source\\repos\\WebApiCheckApp\\webApiCheckApp.Application.DTO\\webApiCheckApp.Application.DTO.csproj": {
+    "C:\\Users\\Lucaum-PC\\source\\repos\\WebApiCheckApp\\Util\\Util.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "c:\\Users\\Lucaum-PC\\source\\repos\\WebApiCheckApp\\webApiCheckApp.Application.DTO\\webApiCheckApp.Application.DTO.csproj",
-        "projectName": "webApiCheckApp.Application.DTO",
-        "projectPath": "c:\\Users\\Lucaum-PC\\source\\repos\\WebApiCheckApp\\webApiCheckApp.Application.DTO\\webApiCheckApp.Application.DTO.csproj",
+        "projectUniqueName": "C:\\Users\\Lucaum-PC\\source\\repos\\WebApiCheckApp\\Util\\Util.csproj",
+        "projectName": "Util",
+        "projectPath": "C:\\Users\\Lucaum-PC\\source\\repos\\WebApiCheckApp\\Util\\Util.csproj",
         "packagesPath": "C:\\Users\\Lucaum-PC\\.nuget\\packages\\",
-        "outputPath": "c:\\Users\\Lucaum-PC\\source\\repos\\WebApiCheckApp\\webApiCheckApp.Application.DTO\\obj\\",
-        "projectStyle": "PackageReference",
-        "fallbackFolders": [
-          "C:\\Microsoft\\Xamarin\\NuGet\\",
-          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
-        ],
-        "configFilePaths": [
-          "C:\\Users\\Lucaum-PC\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
-        ],
-        "originalTargetFrameworks": [
-          "netcoreapp3.0"
-        ],
-        "sources": {
-          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-          "https://api.nuget.org/v3/index.json": {},
-          "https://nugetized.blob.core.windows.net/live-reload/index.json": {}
-        },
-        "frameworks": {
-          "netcoreapp3.0": {
-            "projectReferences": {
-              "c:\\Users\\Lucaum-PC\\source\\repos\\WebApiCheckApp\\WebApiCheckApp.Domain\\WebApiCheckApp.Domain.csproj": {
-                "projectPath": "c:\\Users\\Lucaum-PC\\source\\repos\\WebApiCheckApp\\WebApiCheckApp.Domain\\WebApiCheckApp.Domain.csproj"
-              }
-            }
-          }
-        },
-        "warningProperties": {
-          "warnAsError": [
-            "NU1605"
-          ]
-        }
-      },
-      "frameworks": {
-        "netcoreapp3.0": {
-          "imports": [
-            "net461",
-            "net462",
-            "net47",
-            "net471",
-            "net472",
-            "net48"
-          ],
-          "assetTargetFallback": true,
-          "warn": true,
-          "frameworkReferences": {
-            "Microsoft.NETCore.App": {
-              "privateAssets": "all"
-            }
-          },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.100-preview1-014459\\RuntimeIdentifierGraph.json"
-        }
-      }
-    },
-    "c:\\Users\\Lucaum-PC\\source\\repos\\WebApiCheckApp\\WebApiCheckApp.Domain\\WebApiCheckApp.Domain.csproj": {
-      "version": "1.0.0",
-      "restore": {
-        "projectUniqueName": "c:\\Users\\Lucaum-PC\\source\\repos\\WebApiCheckApp\\WebApiCheckApp.Domain\\WebApiCheckApp.Domain.csproj",
-        "projectName": "WebApiCheckApp.Domain",
-        "projectPath": "c:\\Users\\Lucaum-PC\\source\\repos\\WebApiCheckApp\\WebApiCheckApp.Domain\\WebApiCheckApp.Domain.csproj",
-        "packagesPath": "C:\\Users\\Lucaum-PC\\.nuget\\packages\\",
-        "outputPath": "c:\\Users\\Lucaum-PC\\source\\repos\\WebApiCheckApp\\WebApiCheckApp.Domain\\obj\\",
+        "outputPath": "C:\\Users\\Lucaum-PC\\source\\repos\\WebApiCheckApp\\Util\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Microsoft\\Xamarin\\NuGet\\",
@@ -120,18 +58,18 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.100-preview1-014459\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.0.100\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "c:\\Users\\Lucaum-PC\\source\\repos\\WebApiCheckApp\\WebApiCheckApp.Infrastruture.CrossCutting.Adapter\\WebApiCheckApp.Infrastructure.CrossCutting.Adapter.csproj": {
+    "C:\\Users\\Lucaum-PC\\source\\repos\\WebApiCheckApp\\webApiCheckApp.Application.DTO\\webApiCheckApp.Application.DTO.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "c:\\Users\\Lucaum-PC\\source\\repos\\WebApiCheckApp\\WebApiCheckApp.Infrastruture.CrossCutting.Adapter\\WebApiCheckApp.Infrastructure.CrossCutting.Adapter.csproj",
-        "projectName": "WebApiCheckApp.Infrastructure.CrossCutting.Adapter",
-        "projectPath": "c:\\Users\\Lucaum-PC\\source\\repos\\WebApiCheckApp\\WebApiCheckApp.Infrastruture.CrossCutting.Adapter\\WebApiCheckApp.Infrastructure.CrossCutting.Adapter.csproj",
+        "projectUniqueName": "C:\\Users\\Lucaum-PC\\source\\repos\\WebApiCheckApp\\webApiCheckApp.Application.DTO\\webApiCheckApp.Application.DTO.csproj",
+        "projectName": "webApiCheckApp.Application.DTO",
+        "projectPath": "C:\\Users\\Lucaum-PC\\source\\repos\\WebApiCheckApp\\webApiCheckApp.Application.DTO\\webApiCheckApp.Application.DTO.csproj",
         "packagesPath": "C:\\Users\\Lucaum-PC\\.nuget\\packages\\",
-        "outputPath": "c:\\Users\\Lucaum-PC\\source\\repos\\WebApiCheckApp\\WebApiCheckApp.Infrastruture.CrossCutting.Adapter\\obj\\",
+        "outputPath": "C:\\Users\\Lucaum-PC\\source\\repos\\WebApiCheckApp\\webApiCheckApp.Application.DTO\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Microsoft\\Xamarin\\NuGet\\",
@@ -153,11 +91,134 @@
         "frameworks": {
           "netcoreapp3.0": {
             "projectReferences": {
-              "c:\\Users\\Lucaum-PC\\source\\repos\\WebApiCheckApp\\webApiCheckApp.Application.DTO\\webApiCheckApp.Application.DTO.csproj": {
-                "projectPath": "c:\\Users\\Lucaum-PC\\source\\repos\\WebApiCheckApp\\webApiCheckApp.Application.DTO\\webApiCheckApp.Application.DTO.csproj"
+              "C:\\Users\\Lucaum-PC\\source\\repos\\WebApiCheckApp\\WebApiCheckApp.Domain\\WebApiCheckApp.Domain.csproj": {
+                "projectPath": "C:\\Users\\Lucaum-PC\\source\\repos\\WebApiCheckApp\\WebApiCheckApp.Domain\\WebApiCheckApp.Domain.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netcoreapp3.0": {
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.0.100\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Users\\Lucaum-PC\\source\\repos\\WebApiCheckApp\\WebApiCheckApp.Domain\\WebApiCheckApp.Domain.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\Lucaum-PC\\source\\repos\\WebApiCheckApp\\WebApiCheckApp.Domain\\WebApiCheckApp.Domain.csproj",
+        "projectName": "WebApiCheckApp.Domain",
+        "projectPath": "C:\\Users\\Lucaum-PC\\source\\repos\\WebApiCheckApp\\WebApiCheckApp.Domain\\WebApiCheckApp.Domain.csproj",
+        "packagesPath": "C:\\Users\\Lucaum-PC\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Lucaum-PC\\source\\repos\\WebApiCheckApp\\WebApiCheckApp.Domain\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Microsoft\\Xamarin\\NuGet\\",
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\Lucaum-PC\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "netcoreapp3.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {},
+          "https://nugetized.blob.core.windows.net/live-reload/index.json": {}
+        },
+        "frameworks": {
+          "netcoreapp3.0": {
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netcoreapp3.0": {
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.0.100\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Users\\Lucaum-PC\\source\\repos\\WebApiCheckApp\\WebApiCheckApp.Infrastruture.CrossCutting.Adapter\\WebApiCheckApp.Infrastructure.CrossCutting.Adapter.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\Lucaum-PC\\source\\repos\\WebApiCheckApp\\WebApiCheckApp.Infrastruture.CrossCutting.Adapter\\WebApiCheckApp.Infrastructure.CrossCutting.Adapter.csproj",
+        "projectName": "WebApiCheckApp.Infrastructure.CrossCutting.Adapter",
+        "projectPath": "C:\\Users\\Lucaum-PC\\source\\repos\\WebApiCheckApp\\WebApiCheckApp.Infrastruture.CrossCutting.Adapter\\WebApiCheckApp.Infrastructure.CrossCutting.Adapter.csproj",
+        "packagesPath": "C:\\Users\\Lucaum-PC\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Lucaum-PC\\source\\repos\\WebApiCheckApp\\WebApiCheckApp.Infrastruture.CrossCutting.Adapter\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Microsoft\\Xamarin\\NuGet\\",
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\Lucaum-PC\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "netcoreapp3.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {},
+          "https://nugetized.blob.core.windows.net/live-reload/index.json": {}
+        },
+        "frameworks": {
+          "netcoreapp3.0": {
+            "projectReferences": {
+              "C:\\Users\\Lucaum-PC\\source\\repos\\WebApiCheckApp\\Util\\Util.csproj": {
+                "projectPath": "C:\\Users\\Lucaum-PC\\source\\repos\\WebApiCheckApp\\Util\\Util.csproj"
               },
-              "c:\\Users\\Lucaum-PC\\source\\repos\\WebApiCheckApp\\WebApiCheckApp.Domain\\WebApiCheckApp.Domain.csproj": {
-                "projectPath": "c:\\Users\\Lucaum-PC\\source\\repos\\WebApiCheckApp\\WebApiCheckApp.Domain\\WebApiCheckApp.Domain.csproj"
+              "C:\\Users\\Lucaum-PC\\source\\repos\\WebApiCheckApp\\webApiCheckApp.Application.DTO\\webApiCheckApp.Application.DTO.csproj": {
+                "projectPath": "C:\\Users\\Lucaum-PC\\source\\repos\\WebApiCheckApp\\webApiCheckApp.Application.DTO\\webApiCheckApp.Application.DTO.csproj"
+              },
+              "C:\\Users\\Lucaum-PC\\source\\repos\\WebApiCheckApp\\WebApiCheckApp.Domain\\WebApiCheckApp.Domain.csproj": {
+                "projectPath": "C:\\Users\\Lucaum-PC\\source\\repos\\WebApiCheckApp\\WebApiCheckApp.Domain\\WebApiCheckApp.Domain.csproj"
               }
             }
           }
@@ -191,7 +252,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.100-preview1-014459\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.0.100\\RuntimeIdentifierGraph.json"
         }
       }
     }

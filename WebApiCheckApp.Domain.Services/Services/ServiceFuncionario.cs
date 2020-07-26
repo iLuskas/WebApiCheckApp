@@ -25,5 +25,10 @@ namespace WebApiCheckApp.Domain.Services.Services
         {
             return _repositoryFuncionario.getAllInfoFuncionarioById(id);
         }
+
+        public Funcionario getFuncionarioByName(string name)
+        {
+            return _repositoryFuncionario.getFuncionarioByName(name);
+        }
     }
 }

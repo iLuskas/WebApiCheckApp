@@ -15,9 +15,61 @@ namespace WebApiCheckApp.Infrastruture.Data.Migrations
         {
 #pragma warning disable 612, 618
             modelBuilder
-                .HasAnnotation("ProductVersion", "3.1.3")
+                .HasAnnotation("ProductVersion", "3.1.5")
                 .HasAnnotation("Relational:MaxIdentifierLength", 128)
                 .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
+
+            modelBuilder.Entity("WebApiCheckApp.Domain.Models.AgendaInspManut", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int")
+                        .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
+
+                    b.Property<DateTime?>("DataFinal")
+                        .HasColumnType("datetime2");
+
+                    b.Property<DateTime>("DataInicial")
+                        .HasColumnType("datetime2");
+
+                    b.Property<string>("Duracao")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<int>("EmpresaClienteId")
+                        .HasColumnType("int");
+
+                    b.Property<int>("FuncionarioId")
+                        .HasColumnType("int");
+
+                    b.Property<bool>("OcorrenciaInspecao")
+                        .HasColumnType("bit");
+
+                    b.Property<int>("StatusInspManutId")
+                        .HasColumnType("int");
+
+                    b.Property<int>("TipoAgendamentoId")
+                        .HasColumnType("int");
+
+                    b.Property<int>("TipoEquipamentoId")
+                        .HasColumnType("int");
+
+                    b.Property<string>("TipoManutencao")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.HasKey("Id");
+
+                    b.HasIndex("EmpresaClienteId");
+
+                    b.HasIndex("FuncionarioId");
+
+                    b.HasIndex("StatusInspManutId");
+
+                    b.HasIndex("TipoAgendamentoId");
+
+                    b.HasIndex("TipoEquipamentoId");
+
+                    b.ToTable("AgendaInspManut");
+                });
 
             modelBuilder.Entity("WebApiCheckApp.Domain.Models.EmpresaCliente", b =>
                 {
@@ -29,6 +81,14 @@ namespace WebApiCheckApp.Infrastruture.Data.Migrations
                     b.Property<string>("Cnpj")
                         .HasColumnType("nvarchar(14)")
                         .HasMaxLength(14);
+
+                    b.Property<string>("Email")
+                        .HasColumnType("nvarchar(50)")
+                        .HasMaxLength(50);
+
+                    b.Property<string>("ImagemUrl")
+                        .HasColumnType("nvarchar(254)")
+                        .HasMaxLength(254);
 
                     b.Property<string>("Inscricao_estadual")
                         .HasColumnType("nvarchar(14)")
@@ -203,6 +263,195 @@ namespace WebApiCheckApp.Infrastruture.Data.Migrations
                     b.ToTable("Funcionario");
                 });
 
+            modelBuilder.Entity("WebApiCheckApp.Domain.Models.Inspecao", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int")
+                        .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
+
+                    b.Property<int?>("AgendaInspManutId")
+                        .HasColumnType("int");
+
+                    b.Property<DateTime?>("DataFinal")
+                        .HasColumnType("datetime2");
+
+                    b.Property<DateTime?>("DataInicial")
+                        .HasColumnType("datetime2");
+
+                    b.Property<string>("Duracao")
+                        .HasColumnType("nvarchar(20)")
+                        .HasMaxLength(20);
+
+                    b.Property<int>("EmpresaClienteId")
+                        .HasColumnType("int");
+
+                    b.Property<int>("EquipamentoSegurancaId")
+                        .HasColumnType("int");
+
+                    b.Property<string>("EstadoCilindro_Insp")
+                        .HasColumnType("nvarchar(20)")
+                        .HasMaxLength(20);
+
+                    b.Property<string>("EstadoLocal_Insp")
+                        .HasColumnType("nvarchar(20)")
+                        .HasMaxLength(20);
+
+                    b.Property<int>("FuncionarioId")
+                        .HasColumnType("int");
+
+                    b.Property<string>("ImagemOcorrencia")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("Obs_Insp")
+                        .HasColumnType("nvarchar(255)")
+                        .HasMaxLength(255);
+
+                    b.Property<bool?>("PrecisaManutencao")
+                        .HasColumnType("bit");
+
+                    b.Property<string>("ProximoRec_Insp")
+                        .HasColumnType("nvarchar(50)")
+                        .HasMaxLength(50);
+
+                    b.Property<string>("ProximoReteste_Insp")
+                        .HasColumnType("nvarchar(50)")
+                        .HasMaxLength(50);
+
+                    b.Property<string>("SeloLacre_insp")
+                        .HasColumnType("nvarchar(20)")
+                        .HasMaxLength(20);
+
+                    b.Property<string>("SinalizacaoAcesso_insp")
+                        .HasColumnType("nvarchar(20)")
+                        .HasMaxLength(20);
+
+                    b.Property<string>("SinalizacaoPiso_insp")
+                        .HasColumnType("nvarchar(20)")
+                        .HasMaxLength(20);
+
+                    b.Property<int>("StatusInspManutId")
+                        .HasColumnType("int");
+
+                    b.Property<string>("UltimaRec_Insp")
+                        .HasColumnType("nvarchar(50)")
+                        .HasMaxLength(50);
+
+                    b.Property<string>("UltimoReteste_Insp")
+                        .HasColumnType("nvarchar(50)")
+                        .HasMaxLength(50);
+
+                    b.HasKey("Id");
+
+                    b.HasIndex("AgendaInspManutId");
+
+                    b.HasIndex("EmpresaClienteId");
+
+                    b.HasIndex("EquipamentoSegurancaId");
+
+                    b.HasIndex("FuncionarioId");
+
+                    b.HasIndex("StatusInspManutId");
+
+                    b.ToTable("Inspecao");
+                });
+
+            modelBuilder.Entity("WebApiCheckApp.Domain.Models.Manutencao", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int")
+                        .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
+
+                    b.Property<int?>("AgendaInspManutId")
+                        .HasColumnType("int");
+
+                    b.Property<string>("AnoFabricacao")
+                        .HasColumnType("nvarchar(4)")
+                        .HasMaxLength(4);
+
+                    b.Property<bool>("Aprovado")
+                        .HasColumnType("bit");
+
+                    b.Property<string>("Capacidade")
+                        .HasColumnType("nvarchar(50)")
+                        .HasMaxLength(50);
+
+                    b.Property<DateTime?>("DataFinal")
+                        .HasColumnType("datetime2");
+
+                    b.Property<DateTime?>("DataInicial")
+                        .HasColumnType("datetime2");
+
+                    b.Property<string>("DataProximaRecarga")
+                        .HasColumnType("nvarchar(20)")
+                        .HasMaxLength(20);
+
+                    b.Property<string>("DataRecarga")
+                        .HasColumnType("nvarchar(20)")
+                        .HasMaxLength(20);
+
+                    b.Property<string>("DataReteste")
+                        .HasColumnType("nvarchar(20)")
+                        .HasMaxLength(20);
+
+                    b.Property<string>("Duracao")
+                        .HasColumnType("nvarchar(20)")
+                        .HasMaxLength(20);
+
+                    b.Property<int>("EmpresaClienteId")
+                        .HasColumnType("int");
+
+                    b.Property<int>("EquipamentoSegurancaId")
+                        .HasColumnType("int");
+
+                    b.Property<string>("FabricanteExt")
+                        .HasColumnType("nvarchar(50)")
+                        .HasMaxLength(50);
+
+                    b.Property<int>("FuncionarioId")
+                        .HasColumnType("int");
+
+                    b.Property<string>("NumCilindro")
+                        .HasColumnType("nvarchar(50)")
+                        .HasMaxLength(50);
+
+                    b.Property<string>("ObsManut")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<bool>("Reprovado")
+                        .HasColumnType("bit");
+
+                    b.Property<string>("SeloInmetro")
+                        .HasColumnType("nvarchar(50)")
+                        .HasMaxLength(50);
+
+                    b.Property<int>("StatusInspManutId")
+                        .HasColumnType("int");
+
+                    b.Property<string>("TipoExt")
+                        .HasColumnType("nvarchar(20)")
+                        .HasMaxLength(20);
+
+                    b.Property<string>("UltimoTeste")
+                        .HasColumnType("nvarchar(20)")
+                        .HasMaxLength(20);
+
+                    b.HasKey("Id");
+
+                    b.HasIndex("AgendaInspManutId");
+
+                    b.HasIndex("EmpresaClienteId");
+
+                    b.HasIndex("EquipamentoSegurancaId");
+
+                    b.HasIndex("FuncionarioId");
+
+                    b.HasIndex("StatusInspManutId");
+
+                    b.ToTable("Manutencao");
+                });
+
             modelBuilder.Entity("WebApiCheckApp.Domain.Models.Perfil", b =>
                 {
                     b.Property<int>("Id")
@@ -217,6 +466,38 @@ namespace WebApiCheckApp.Infrastruture.Data.Migrations
                     b.HasKey("Id");
 
                     b.ToTable("Perfil");
+                });
+
+            modelBuilder.Entity("WebApiCheckApp.Domain.Models.StatusInspManut", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int")
+                        .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
+
+                    b.Property<string>("statusAgenda")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.HasKey("Id");
+
+                    b.ToTable("StatusInspManut");
+
+                    b.HasData(
+                        new
+                        {
+                            Id = 1,
+                            statusAgenda = "Pendente"
+                        },
+                        new
+                        {
+                            Id = 2,
+                            statusAgenda = "Em Andamento"
+                        },
+                        new
+                        {
+                            Id = 3,
+                            statusAgenda = "Finalizado"
+                        });
                 });
 
             modelBuilder.Entity("WebApiCheckApp.Domain.Models.Telefone", b =>
@@ -247,6 +528,33 @@ namespace WebApiCheckApp.Infrastruture.Data.Migrations
                     b.HasIndex("FuncionarioId");
 
                     b.ToTable("Telefone");
+                });
+
+            modelBuilder.Entity("WebApiCheckApp.Domain.Models.TipoAgendamento", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int")
+                        .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
+
+                    b.Property<string>("TipoAgenda")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.HasKey("Id");
+
+                    b.ToTable("TipoAgendamento");
+
+                    b.HasData(
+                        new
+                        {
+                            Id = 1,
+                            TipoAgenda = "Inspeção"
+                        },
+                        new
+                        {
+                            Id = 2,
+                            TipoAgenda = "Manutenção"
+                        });
                 });
 
             modelBuilder.Entity("WebApiCheckApp.Domain.Models.Tipo_equipamento", b =>
@@ -280,6 +588,39 @@ namespace WebApiCheckApp.Infrastruture.Data.Migrations
                     b.HasKey("Id");
 
                     b.ToTable("Usuario");
+                });
+
+            modelBuilder.Entity("WebApiCheckApp.Domain.Models.AgendaInspManut", b =>
+                {
+                    b.HasOne("WebApiCheckApp.Domain.Models.EmpresaCliente", "EmpresaCliente")
+                        .WithMany()
+                        .HasForeignKey("EmpresaClienteId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.HasOne("WebApiCheckApp.Domain.Models.Funcionario", "Funcionario")
+                        .WithMany()
+                        .HasForeignKey("FuncionarioId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.HasOne("WebApiCheckApp.Domain.Models.StatusInspManut", "StatusInspManut")
+                        .WithMany()
+                        .HasForeignKey("StatusInspManutId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.HasOne("WebApiCheckApp.Domain.Models.TipoAgendamento", "TipoAgendamento")
+                        .WithMany()
+                        .HasForeignKey("TipoAgendamentoId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.HasOne("WebApiCheckApp.Domain.Models.Tipo_equipamento", "TipoEquipamento")
+                        .WithMany()
+                        .HasForeignKey("TipoEquipamentoId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
                 });
 
             modelBuilder.Entity("WebApiCheckApp.Domain.Models.Endereco", b =>
@@ -331,6 +672,68 @@ namespace WebApiCheckApp.Infrastruture.Data.Migrations
                         .WithOne("Funcionario")
                         .HasForeignKey("WebApiCheckApp.Domain.Models.Funcionario", "UsuarioId")
                         .OnDelete(DeleteBehavior.Cascade);
+                });
+
+            modelBuilder.Entity("WebApiCheckApp.Domain.Models.Inspecao", b =>
+                {
+                    b.HasOne("WebApiCheckApp.Domain.Models.AgendaInspManut", "AgendaInspManut")
+                        .WithMany("Inspecoes")
+                        .HasForeignKey("AgendaInspManutId");
+
+                    b.HasOne("WebApiCheckApp.Domain.Models.EmpresaCliente", "EmpresaCliente")
+                        .WithMany()
+                        .HasForeignKey("EmpresaClienteId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.HasOne("WebApiCheckApp.Domain.Models.Equipamento_Seguranca", "EquipamentoSeguranca")
+                        .WithMany("Inspecoes")
+                        .HasForeignKey("EquipamentoSegurancaId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.HasOne("WebApiCheckApp.Domain.Models.Funcionario", "Funcionario")
+                        .WithMany()
+                        .HasForeignKey("FuncionarioId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.HasOne("WebApiCheckApp.Domain.Models.StatusInspManut", "StatusInspManut")
+                        .WithMany()
+                        .HasForeignKey("StatusInspManutId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+                });
+
+            modelBuilder.Entity("WebApiCheckApp.Domain.Models.Manutencao", b =>
+                {
+                    b.HasOne("WebApiCheckApp.Domain.Models.AgendaInspManut", "AgendaInspManut")
+                        .WithMany("Manutencoes")
+                        .HasForeignKey("AgendaInspManutId");
+
+                    b.HasOne("WebApiCheckApp.Domain.Models.EmpresaCliente", "EmpresaCliente")
+                        .WithMany()
+                        .HasForeignKey("EmpresaClienteId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.HasOne("WebApiCheckApp.Domain.Models.Equipamento_Seguranca", "EquipamentoSeguranca")
+                        .WithMany()
+                        .HasForeignKey("EquipamentoSegurancaId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.HasOne("WebApiCheckApp.Domain.Models.Funcionario", "Funcionario")
+                        .WithMany()
+                        .HasForeignKey("FuncionarioId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.HasOne("WebApiCheckApp.Domain.Models.StatusInspManut", "StatusInspManut")
+                        .WithMany()
+                        .HasForeignKey("StatusInspManutId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
                 });
 
             modelBuilder.Entity("WebApiCheckApp.Domain.Models.Telefone", b =>

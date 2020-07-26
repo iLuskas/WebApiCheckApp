@@ -9,6 +9,7 @@
   </ItemGroup>
 
   <ItemGroup>
+    <ProjectReference Include="..\Util\Util.csproj" />
     <ProjectReference Include="..\webApiCheckApp.Application.DTO\webApiCheckApp.Application.DTO.csproj" />
     <ProjectReference Include="..\WebApiCheckApp.Domain\WebApiCheckApp.Domain.csproj" />
   </ItemGroup>

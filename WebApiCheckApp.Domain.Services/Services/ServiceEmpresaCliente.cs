@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.IO;
 using System.Text;
 using System.Threading.Tasks;
 using WebApiCheckApp.Domain.Core.Interfaces.Repositorys;
@@ -23,12 +24,18 @@ namespace WebApiCheckApp.Domain.Services.Services
 
         public IEnumerable<EmpresaCliente> getAllInfoEmpresaCliente()
         {
-            return _repositoryEmpresaCliente.getAllInfoEmpresaCliente();
+            var empresas =  _repositoryEmpresaCliente.getAllInfoEmpresaCliente();
+            return empresas;
         }
 
         public EmpresaCliente getAllInfoEmpresaClienteById(int id)
         {
             return _repositoryEmpresaCliente.getAllInfoEmpresaClienteById(id);
+        }
+
+        public IEnumerable<dynamic> getRelatOcorrenciaForEmp()
+        {
+            return _repositoryEmpresaCliente.getRelatOcorrenciaForEmp();
         }
     }
 }

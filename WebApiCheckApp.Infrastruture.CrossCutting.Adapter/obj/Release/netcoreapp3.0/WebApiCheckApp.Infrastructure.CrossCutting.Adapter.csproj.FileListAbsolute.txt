@@ -1,8 +1,10 @@
 C:\Users\Lucaum-PC\source\repos\WebApiCheckApp\WebApiCheckApp.Infrastruture.CrossCutting.Adapter\bin\Release\netcoreapp3.0\WebApiCheckApp.Infrastructure.CrossCutting.Adapter.deps.json
 C:\Users\Lucaum-PC\source\repos\WebApiCheckApp\WebApiCheckApp.Infrastruture.CrossCutting.Adapter\bin\Release\netcoreapp3.0\WebApiCheckApp.Infrastructure.CrossCutting.Adapter.dll
 C:\Users\Lucaum-PC\source\repos\WebApiCheckApp\WebApiCheckApp.Infrastruture.CrossCutting.Adapter\bin\Release\netcoreapp3.0\WebApiCheckApp.Infrastructure.CrossCutting.Adapter.pdb
+C:\Users\Lucaum-PC\source\repos\WebApiCheckApp\WebApiCheckApp.Infrastruture.CrossCutting.Adapter\bin\Release\netcoreapp3.0\Util.dll
 C:\Users\Lucaum-PC\source\repos\WebApiCheckApp\WebApiCheckApp.Infrastruture.CrossCutting.Adapter\bin\Release\netcoreapp3.0\webApiCheckApp.Application.DTO.dll
 C:\Users\Lucaum-PC\source\repos\WebApiCheckApp\WebApiCheckApp.Infrastruture.CrossCutting.Adapter\bin\Release\netcoreapp3.0\WebApiCheckApp.Domain.dll
+C:\Users\Lucaum-PC\source\repos\WebApiCheckApp\WebApiCheckApp.Infrastruture.CrossCutting.Adapter\bin\Release\netcoreapp3.0\Util.pdb
 C:\Users\Lucaum-PC\source\repos\WebApiCheckApp\WebApiCheckApp.Infrastruture.CrossCutting.Adapter\bin\Release\netcoreapp3.0\webApiCheckApp.Application.DTO.pdb
 C:\Users\Lucaum-PC\source\repos\WebApiCheckApp\WebApiCheckApp.Infrastruture.CrossCutting.Adapter\bin\Release\netcoreapp3.0\WebApiCheckApp.Domain.pdb
 C:\Users\Lucaum-PC\source\repos\WebApiCheckApp\WebApiCheckApp.Infrastruture.CrossCutting.Adapter\obj\Release\netcoreapp3.0\WebApiCheckApp.Infrastructure.CrossCutting.Adapter.csprojAssemblyReference.cache

@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Microsoft.AspNetCore.Http;
+using System;
 using System.Collections.Generic;
 using System.Text;
 using System.Threading.Tasks;
@@ -14,6 +15,7 @@ namespace WebApiCheckApp.Application.Interfaces
         IEnumerable<EmpresaClienteDTO> GetAllInfoEmpressaCliente();
         EmpresaClienteDTO getAllInfoEmpresaClienteById(int id);
         EmpresaClienteDTO getAllEquipamentoByIdAndTipo(int empresaId, int tipoId);
+        IEnumerable<dynamic> getRelatOcorrenciaForEmp();
         void Update(EmpresaClienteDTO obj);
         void Remove(EmpresaClienteDTO obj);
         void Dispose();

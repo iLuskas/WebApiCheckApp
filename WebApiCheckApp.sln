@@ -35,6 +35,8 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WebApiCheckApp.Infrastructu
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WebApiCheckApp.Infrastructure.CrossCutting.IOC", "WebApiCheckApp.Infrastruture.CrossCutting.IOC\WebApiCheckApp.Infrastructure.CrossCutting.IOC.csproj", "{7CDB496A-E8E1-4B82-8BC0-6C37477B6294}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Util", "Util\Util.csproj", "{29ED5F22-AC18-49D0-BF54-A4745EDB0D84}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -81,6 +83,10 @@ Global
 		{7CDB496A-E8E1-4B82-8BC0-6C37477B6294}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{7CDB496A-E8E1-4B82-8BC0-6C37477B6294}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{7CDB496A-E8E1-4B82-8BC0-6C37477B6294}.Release|Any CPU.Build.0 = Release|Any CPU
+		{29ED5F22-AC18-49D0-BF54-A4745EDB0D84}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{29ED5F22-AC18-49D0-BF54-A4745EDB0D84}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{29ED5F22-AC18-49D0-BF54-A4745EDB0D84}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{29ED5F22-AC18-49D0-BF54-A4745EDB0D84}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -98,6 +104,7 @@ Global
 		{1B2DBED9-F488-4F99-BCBF-05D5A0353135} = {6A030C7F-FD05-4CA7-9D33-95854A3123B7}
 		{76C3F30C-29B9-47E4-B43B-9F1CEF95E299} = {1B2DBED9-F488-4F99-BCBF-05D5A0353135}
 		{7CDB496A-E8E1-4B82-8BC0-6C37477B6294} = {1B2DBED9-F488-4F99-BCBF-05D5A0353135}
+		{29ED5F22-AC18-49D0-BF54-A4745EDB0D84} = {1B2DBED9-F488-4F99-BCBF-05D5A0353135}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {9FEB73E6-42C2-449E-A759-D928B7155B64}

@@ -9,11 +9,11 @@ namespace WebApiCheckApp.Domain.Services.Services
 {
     public class ServiceEndereco : ServiceBase<Endereco>, IServiceEndereco
     {
-        private readonly IRepositoryEndereco repositoryEndereco;
+        private readonly IRepositoryEndereco _repositoryEndereco;
 
         public ServiceEndereco(IRepositoryEndereco repositoryEndereco) : base(repositoryEndereco)
         {
-            this.repositoryEndereco = repositoryEndereco;
+            _repositoryEndereco = repositoryEndereco;
         }
     }
 }

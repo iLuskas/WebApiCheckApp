@@ -1,8 +1,7 @@
 ﻿using AutoMapper;
 using System;
 using System.Collections.Generic;
-using System.Text;
-using System.Threading.Tasks;
+using System.IO;
 using webApiCheckApp.Application.DTO.DTO;
 using WebApiCheckApp.Application.Interfaces;
 using WebApiCheckApp.Domain.Core.Interfaces.Services;
@@ -57,8 +56,22 @@ namespace WebApiCheckApp.Application.Services
         public IEnumerable<EmpresaClienteDTO> GetAllInfoEmpressaCliente()
         {
             var listObjentity = _serviceEmpresaCliente.getAllInfoEmpresaCliente();
+            var objsMapped = _mapper.Map<IEnumerable<EmpresaClienteDTO>>(listObjentity);
 
-            return _mapper.Map<IEnumerable<EmpresaClienteDTO>>(listObjentity);
+            var folderName = Path.Combine("Resources", "Images");
+            var pathToSave = Path.Combine(Directory.GetCurrentDirectory(), folderName);
+
+            foreach (var item in objsMapped)
+            {
+                var fullPathImg = $"{pathToSave}/{item.ImagemUrl}";
+                if (File.Exists(fullPathImg))
+                {
+                    byte[] imageArray = File.ReadAllBytes(fullPathImg);
+                    item.ImagemUrlBase64 = Convert.ToBase64String(imageArray);
+                }
+            }
+
+            return objsMapped;
         }
 
         public EmpresaClienteDTO GetById(int id)
@@ -66,6 +79,11 @@ namespace WebApiCheckApp.Application.Services
             var objEntity = _serviceEmpresaCliente.GetById(id);
 
             return _mapper.Map<EmpresaClienteDTO>(objEntity);
+        }
+
+        public IEnumerable<dynamic> getRelatOcorrenciaForEmp()
+        {
+            return _serviceEmpresaCliente.getRelatOcorrenciaForEmp();
         }
 
         public void Remove(EmpresaClienteDTO obj)

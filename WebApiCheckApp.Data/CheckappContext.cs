@@ -24,10 +24,13 @@ namespace WebApiCheckApp.Data
         public DbSet<EmpresaCliente> EmpresaClientes { get; set; }
         public DbSet<Endereco> Enderecos { get; set; }
         public DbSet<Telefone> Telefones { get; set; }
-        public DbSet<Equipamento_Seguranca> Equipamento_Segurancas { get; set; }
+        public DbSet<Equipamento_Seguranca> Equipamento_Segurancas { get; set; }        
         public DbSet<Extintor> Extintors { get; set; }
-
-
+        public DbSet<TipoAgendamento> TipoAgendamentos { get; set; }
+        public DbSet<AgendaInspManut> AgendaInspManuts { get; set; }
+        public DbSet<StatusInspManut> StatusInspManuts { get; set; }
+        public DbSet<Inspecao> Inspecoes { get; set; }
+        public DbSet<Manutencao> Manutencoes { get; set; }
         public IDbContextTransaction InitTransacao()
         {
             if (Transaction == null)
@@ -75,7 +78,7 @@ namespace WebApiCheckApp.Data
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
             modelBuilder.Entity<Usuario>().ToTable("Usuario");
-            
+
             modelBuilder.Entity<Usuario>().HasOne(t => t.Funcionario)
                 .WithOne(t => t.Usuario)
                 .OnDelete(DeleteBehavior.Cascade);
@@ -108,7 +111,30 @@ namespace WebApiCheckApp.Data
                 .HasOne(e => e.Extintor).WithOne(eq => eq.Equipamento)
                 .OnDelete(DeleteBehavior.Cascade);
 
+            modelBuilder.Entity<Equipamento_Seguranca>()
+                .HasMany(e => e.Inspecoes).WithOne(i => i.EquipamentoSeguranca);
+
             modelBuilder.Entity<Extintor>().ToTable("Extintor");
+
+            modelBuilder.Entity<TipoAgendamento>().ToTable("TipoAgendamento")
+                .HasData(new List<TipoAgendamento>() {
+                    new TipoAgendamento(){Id=1,TipoAgenda="Inspeção"},
+                    new TipoAgendamento(){Id=2,TipoAgenda="Manutenção"},
+                });
+
+            modelBuilder.Entity<StatusInspManut>().ToTable("StatusInspManut")
+                .HasData(new List<StatusInspManut>() {
+                    new StatusInspManut(){Id=1,statusAgenda="Pendente"},
+                    new StatusInspManut(){Id=2,statusAgenda="Em Andamento"},
+                    new StatusInspManut(){Id=3,statusAgenda="Finalizado"},
+                 });
+
+            modelBuilder.Entity<AgendaInspManut>().ToTable("AgendaInspManut")
+                .HasMany(a => a.Inspecoes)
+                .WithOne(t => t.AgendaInspManut);
+
+            modelBuilder.Entity<Inspecao>().ToTable("Inspecao");
+            modelBuilder.Entity<Manutencao>().ToTable("Manutencao");
 
             base.OnModelCreating(modelBuilder);
         }

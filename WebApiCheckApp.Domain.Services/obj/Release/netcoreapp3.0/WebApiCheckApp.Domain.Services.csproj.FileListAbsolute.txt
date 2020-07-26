@@ -1,9 +1,11 @@
 C:\Users\Lucaum-PC\source\repos\WebApiCheckApp\WebApiCheckApp.Domain.Services\bin\Release\netcoreapp3.0\WebApiCheckApp.Domain.Services.deps.json
 C:\Users\Lucaum-PC\source\repos\WebApiCheckApp\WebApiCheckApp.Domain.Services\bin\Release\netcoreapp3.0\WebApiCheckApp.Domain.Services.dll
 C:\Users\Lucaum-PC\source\repos\WebApiCheckApp\WebApiCheckApp.Domain.Services\bin\Release\netcoreapp3.0\WebApiCheckApp.Domain.Services.pdb
+C:\Users\Lucaum-PC\source\repos\WebApiCheckApp\WebApiCheckApp.Domain.Services\bin\Release\netcoreapp3.0\Util.dll
 C:\Users\Lucaum-PC\source\repos\WebApiCheckApp\WebApiCheckApp.Domain.Services\bin\Release\netcoreapp3.0\webApiCheckApp.Application.DTO.dll
 C:\Users\Lucaum-PC\source\repos\WebApiCheckApp\WebApiCheckApp.Domain.Services\bin\Release\netcoreapp3.0\WebApiCheckApp.Domain.Core.dll
 C:\Users\Lucaum-PC\source\repos\WebApiCheckApp\WebApiCheckApp.Domain.Services\bin\Release\netcoreapp3.0\WebApiCheckApp.Domain.dll
+C:\Users\Lucaum-PC\source\repos\WebApiCheckApp\WebApiCheckApp.Domain.Services\bin\Release\netcoreapp3.0\Util.pdb
 C:\Users\Lucaum-PC\source\repos\WebApiCheckApp\WebApiCheckApp.Domain.Services\bin\Release\netcoreapp3.0\WebApiCheckApp.Domain.Core.pdb
 C:\Users\Lucaum-PC\source\repos\WebApiCheckApp\WebApiCheckApp.Domain.Services\bin\Release\netcoreapp3.0\webApiCheckApp.Application.DTO.pdb
 C:\Users\Lucaum-PC\source\repos\WebApiCheckApp\WebApiCheckApp.Domain.Services\bin\Release\netcoreapp3.0\WebApiCheckApp.Domain.pdb

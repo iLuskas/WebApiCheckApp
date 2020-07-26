@@ -2,9 +2,11 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using webApiCheckApp.Application.DTO.DTO;
+using webApiCheckApp.Application.DTO.DTO.DTOHelpers;
 using WebApiCheckApp.Application.Interfaces;
 
 namespace WebApiCheckApp.Controllers
@@ -26,7 +28,7 @@ namespace WebApiCheckApp.Controllers
         {
             try
             {
-                return Ok(_applicationServiceUsuario.GetAll());
+                return Ok(_applicationServiceUsuario.GetAllUsuario());
             }
             catch (Exception ex)
             {
@@ -50,6 +52,45 @@ namespace WebApiCheckApp.Controllers
                 return StatusCode(StatusCodes.Status500InternalServerError, "Banco de dados Falhou - método GETBYID");
             }
 
+        }
+
+        // POST api/recuperarSenha/values
+        [HttpPost("recuperarSenha")]
+        public ActionResult recuperarSenha([FromQuery] string email)
+        {
+            try
+            {
+                if (string.IsNullOrEmpty(email))
+                    return NotFound(new { message = "Email inválido!" });
+
+                return Ok(_applicationServiceUsuario.ResetSenhaUsuario(email));
+            }
+            catch (Exception)
+            {
+
+                return StatusCode(StatusCodes.Status500InternalServerError, "Banco de dados Falhou - método Login");
+            }
+        }
+
+        // POST api/recuperarSenha/values
+        [HttpPost("alterarSenha")]
+        [Authorize]
+        public ActionResult alterarSenha([FromBody] ModeloAlterarSenhaUserDTO modeloAlterarSenhaUserDTO)
+        {
+            try
+            {
+                if (modeloAlterarSenhaUserDTO == null)
+                    return NotFound(new { message = "Usuário inválido!" });
+
+                _applicationServiceUsuario.AlterarSenhaUsuario(modeloAlterarSenhaUserDTO);
+
+                return Ok("Senha Alterada com sucesso!");
+            }
+            catch (Exception)
+            {
+
+                return StatusCode(StatusCodes.Status500InternalServerError, "Banco de dados Falhou - método Login");
+            }
         }
 
         // POST api/values

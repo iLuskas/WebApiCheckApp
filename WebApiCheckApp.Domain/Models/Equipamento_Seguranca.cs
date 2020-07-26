@@ -15,5 +15,6 @@ namespace WebApiCheckApp.Domain.Models
         public DateTime? Qrcode_data_geracao { get; set; }
         public DateTime DataCriacao_equipamento { get; set; }
         public virtual Extintor Extintor { get; set; }
+        public virtual List<Inspecao> Inspecoes { get; set; }
     }
 }

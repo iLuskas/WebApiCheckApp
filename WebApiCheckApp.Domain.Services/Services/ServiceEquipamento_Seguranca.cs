@@ -35,5 +35,25 @@ namespace WebApiCheckApp.Domain.Services.Services
         {
             return _repositoryEquipamento_Seguranca.getEquipamentoById(id);
         }
+
+        public dynamic getEquipByNumExtintor(string numExtintor, int empId)
+        {
+            return _repositoryEquipamento_Seguranca.getEquipByNumExtintor(numExtintor, empId);
+        }
+
+        public IEnumerable<dynamic> getRelatEquipamentos(DateTime dataIni, DateTime dataFim)
+        {
+            return _repositoryEquipamento_Seguranca.getRelatEquipamentos(dataIni, dataFim);
+        }
+
+        public IEnumerable<dynamic> getRelatEquipInsp()
+        {
+            return _repositoryEquipamento_Seguranca.getRelatEquipInsp();
+        }
+
+        public IEnumerable<dynamic> getRelatEquipNotInsp()
+        {
+            return _repositoryEquipamento_Seguranca.getRelatEquipNotInsp();
+        }
     }
 }

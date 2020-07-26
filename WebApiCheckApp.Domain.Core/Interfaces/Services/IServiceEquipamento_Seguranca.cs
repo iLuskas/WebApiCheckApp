@@ -11,5 +11,9 @@ namespace WebApiCheckApp.Domain.Core.Interfaces.Services
         IEnumerable<Equipamento_Seguranca> getAllEquipamentoByEmpresaId(int EmpresaId);
         IEnumerable<Equipamento_Seguranca> getAllEquipamentoByEmpresaIdAndTipo(int EmpresaId, int tipoId);
         IEnumerable<Equipamento_Seguranca> getAllEquipamento();
+        IEnumerable<dynamic> getRelatEquipamentos(DateTime dataIni, DateTime dataFim);
+        dynamic getEquipByNumExtintor(string numExtintor, int empId);
+        IEnumerable<dynamic> getRelatEquipNotInsp();
+        IEnumerable<dynamic> getRelatEquipInsp();
     }
 }

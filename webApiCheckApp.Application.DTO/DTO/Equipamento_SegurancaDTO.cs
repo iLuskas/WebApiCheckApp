@@ -1,4 +1,5 @@
 using System;
+using System.Collections.Generic;
 
 namespace webApiCheckApp.Application.DTO.DTO
 {
@@ -11,5 +12,6 @@ namespace webApiCheckApp.Application.DTO.DTO
         public DateTime? Qrcode_data_geracao { get; set; }
         public DateTime DataCriacao_equipamento { get; set; }
         public ExtintorDTO ExtintorDTO { get; set; }
+        public virtual List<InspecaoDTO> InspecaoDTOs { get; set; }
     }
 }
